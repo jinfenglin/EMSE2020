@@ -2,6 +2,10 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/EMSE/data" />
+      <excludeFolder url="file://$MODULE_DIR$/EMSE/exp1/evaluation" />
+      <excludeFolder url="file://$MODULE_DIR$/EMSE/exp1/output" />
+      <excludeFolder url="file://$MODULE_DIR$/EMSE/exp1/runs" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />

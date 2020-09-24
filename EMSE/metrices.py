@@ -118,21 +118,12 @@ class metrics:
         return mrr_sum / len(group_tops)
 
     def get_all_metrices(self):
-        pk3 = self.precision_at_K(3)
-        pk2 = self.precision_at_K(2)
-        pk1 = self.precision_at_K(1)
-
         best_f1, best_f2, details = self.precision_recall_curve("pr_curve.png")
-        map = self.MAP_at_K(3)
-        mrr = self.MRR()
+        map = self.MAP_at_K()
         return {
-            'pk3': pk3,
-            'pk2': pk2,
-            'pk1': pk1,
             'f1': best_f1,
             'f2': best_f2,
             'map': map,
-            'mrr': mrr,
             'details': details
         }
 

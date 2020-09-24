@@ -10,7 +10,7 @@ from pandas import DataFrame
 from tqdm import tqdm
 
 from EMSE.metrices import metrics
-from EMSE.models import TBERT
+from EMSE.models import TBERT, TBertSingle, TBertSiamese, TBertTwin
 
 MODEL_FNAME = "t_bert.pt"
 OPTIMIZER_FNAME = "optimizer.pt"
@@ -192,10 +192,12 @@ def evaluate_classification(eval_examples, model: TBERT, batch_size, output_dir,
         with torch.no_grad():
             model.eval()
             labels = batch[2].to(model.device)
-            if isinstance(model, TBERT):
+            if isinstance(model, TBertSingle):
                 inputs = format_batch_input_for_single_bert(batch, eval_examples, model)
-            else:
+            elif isinstance(model, TBertSiamese) or isinstance(model, TBertTwin):
                 inputs = format_batch_input(batch, eval_examples, model)
+            else:
+                raise Exception("unknown type of model")
             if append_label:
                 inputs['relation_label'] = labels
 
