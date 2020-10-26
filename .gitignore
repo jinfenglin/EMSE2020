@@ -4,3 +4,5 @@ data/
 results
 venv
 *.pyc
+results
+.idea
