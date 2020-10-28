@@ -6,7 +6,8 @@ import sys
 
 import pandas
 
-sys.path.append(".")
+base_dir = os.path.dirname(os.path.realpath(__file__))
+sys.path.append(os.path.join(base_dir,"."))
 from Preprocessor import Preprocessor
 
 
