@@ -14,3 +14,4 @@ python eval.py \
 --model_path ./models/model1 \
 --per_gpu_eval_batch_size 4 \
 --exp_name exp1_model1
+--lm distilbert-base-multilingual-cased

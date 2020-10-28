@@ -10,8 +10,9 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 from EMSE.BERTDataReader import load_examples
-from EMSE.exp1.train import init_train_env
+from transformers import BertConfig
 from EMSE.metrices import metrics
+from EMSE.models import TBertSiamese
 from EMSE.utils import results_to_df
 
 sys.path.append("..")
@@ -71,6 +72,7 @@ def get_eval_args():
     parser.add_argument("--output_dir", default="./evaluation/test", help="directory to store the results")
     parser.add_argument("--overwrite", action="store_true", help="overwrite the cached data")
     parser.add_argument("--exp_name", help="id for this run of experiment")
+    parser.add_argument("--lm", help="language model")
     parser.add_argument("--chunk_query_num", default=-1, type=int,
                         help="The number of queries in each chunk of retrivial task")
     args = parser.parse_args()
@@ -80,10 +82,19 @@ def get_eval_args():
 
 if __name__ == "__main__":
     args = get_eval_args()
-    args.local_rank = 0
-    args.fp16 = False
-    model = init_train_env(args, tbert_type='siamese')
+    device = torch.device("cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu")
+    res_file = os.path.join(args.output_dir, "./raw_res.csv")
 
+    cache_dir = os.path.join(args.data_dir, "cache")
+    cached_file = os.path.join(cache_dir, "test_examples_cache.dat".format())
+
+    logging.basicConfig(level='INFO')
+    logger = logging.getLogger(__name__)
+
+    if not os.path.isdir(args.output_dir):
+        os.makedirs(args.output_dir)
+
+    model = TBertSiamese(BertConfig(), args.lm)
     if args.model_path and os.path.exists(args.model_path):
         model_path = os.path.join(args.model_path, MODEL_FNAME)
         model.load_state_dict(torch.load(model_path))
