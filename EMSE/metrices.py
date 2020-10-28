@@ -58,9 +58,9 @@ class metrics:
                 max_threshold = tr
             if f2 >= max_f2:
                 max_f2 = f2
-        viz = PrecisionRecallDisplay(
-            precision=precision, recall=recall)
-        viz.plot()
+        # viz = PrecisionRecallDisplay(
+        #     precision=precision, recall=recall, average_precision=None,estimator_name=None)
+        # viz.plot()
         if os.path.isdir(self.output_dir):
             fig_path = os.path.join(self.output_dir, fig_name)
             plt.savefig(fig_path)
@@ -97,10 +97,23 @@ class metrics:
                     if k < 0 or i <= k:
                         group_hits += 1
                         ap += group_hits / (i + 1)
-            ap = ap / group_pos if group_pos > 0 else 0
+            ap = ap / group_pos if group_pos > 0 else 1
             ap_sum += ap
         map = ap_sum / len(group_tops) if len(group_tops) > 0 else 0
         return round(map, 3)
+
+    def AP(self):
+        sorted = self.data_frame.sort_values(["pred"], ascending=False).reset_index(drop=True)
+        pos = 0
+        hits = 0
+        ap = 0
+        for i, (index, row) in enumerate(sorted.iterrows()):
+            if row['label'] == 1:
+                pos += 1
+                hits += 1
+                ap += hits / (i + 1)
+        ap = ap / pos if pos > 0 else 0
+        return round(ap, 3)
 
     def MRR(self):
         if self.group_sort is None:
@@ -165,6 +178,7 @@ if __name__ == "__main__":
     ]
     df = pd.DataFrame(test, columns=['s_id', 't_id', 'pred', 'label'])
     m = metrics(df)
-    m.precision_recall_curve('test.png')
+    # m.precision_recall_curve('test.png')
     print(m.precision_at_K(2))
     print(m.MAP_at_K(2))
+    print(m.AP())

@@ -252,8 +252,9 @@ def evaluate_retrival(model, eval_examples, batch_size, res_dir):
     pk = m.precision_at_K(3)
     best_f1, best_f2, details = m.precision_recall_curve("pr_curve.png")
     map = m.MAP_at_K(3)
+    ap = m.AP()
 
-    summary = "\nprecision@3={}, best_f1 = {}, best_f2={}， MAP={}\n".format(pk, best_f1, best_f2, map)
+    summary = "\nprecision@3={}, best_f1 = {}, best_f2={}， MAP={}, AP={}\n".format(pk, best_f1, best_f2, map, ap)
     with open(summary_path, 'w') as fout:
         fout.write(summary)
         fout.write(str(details))
