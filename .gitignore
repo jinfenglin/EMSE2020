@@ -7,3 +7,5 @@ venv
 output
 evaluation
 .idea/
+results
+models

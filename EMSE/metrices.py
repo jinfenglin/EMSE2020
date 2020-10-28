@@ -120,10 +120,12 @@ class metrics:
     def get_all_metrices(self):
         best_f1, best_f2, details = self.precision_recall_curve("pr_curve.png")
         map = self.MAP_at_K()
+        ap = self.AP()
         return {
             'f1': best_f1,
             'f2': best_f2,
             'map': map,
+            'ap': ap,
             'details': details
         }
 
@@ -132,7 +134,7 @@ class metrics:
         res = self.get_all_metrices()
         pk3, pk2, pk1 = res['pk3'], res['pk2'], res['pk1']
         best_f1, best_f2, details = res['f1'], res['f2'], res['details']
-        map, mrr = res['map'], res['mrr']
+        map, mrr, ap = res['map'], res['mrr'], res['ap']
         summary = "\npk3={}, pk2={},pk1={} best_f1 = {}, bets_f2={}, MAP={}, MRR={}, exe_time={}\n".format(pk3, pk2,
                                                                                                            pk1,
                                                                                                            best_f1,
