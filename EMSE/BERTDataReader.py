@@ -3,6 +3,7 @@ import os
 import re
 
 import pandas as pd
+import numpy as np
 
 from EMSE.data_structures import Examples
 
@@ -69,7 +70,7 @@ class Commit:
 
 def __read_artifacts(file_path, type):
     df = pd.read_csv(file_path)
-    df = df.replace(pd.np.nan, regex=True)
+    df = df.replace(np.nan, regex=True)
     arti = []
     for index, row in df.iterrows():
         if type == 'commit':

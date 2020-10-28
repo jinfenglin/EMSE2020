@@ -72,12 +72,18 @@ class TBertTwin(TBERT):
         # nbert_model = "huggingface/CodeBERTa-small-v1"
         cbert_model = code_bert
         nbert_model = code_bert
+        if code_bert == 'microsoft/Multilingual-MiniLM-L12-H384':
+            self.ctokneizer = AutoTokenizer.from_pretrained("xlm-roberta-base")
+            self.cbert = AutoModel.from_pretrained(cbert_model)
 
-        self.ctokneizer = AutoTokenizer.from_pretrained(cbert_model)
-        self.cbert = AutoModel.from_pretrained(cbert_model)
+            self.ntokenizer = AutoTokenizer.from_pretrained("xlm-roberta-base")
+            self.nbert = AutoModel.from_pretrained(nbert_model)
+        else:
+            self.ctokneizer = AutoTokenizer.from_pretrained(cbert_model)
+            self.cbert = AutoModel.from_pretrained(cbert_model)
 
-        self.ntokenizer = AutoTokenizer.from_pretrained(nbert_model)
-        self.nbert = AutoModel.from_pretrained(nbert_model)
+            self.ntokenizer = AutoTokenizer.from_pretrained(nbert_model)
+            self.nbert = AutoModel.from_pretrained(nbert_model)
 
         self.cls = RelationClassifyHeader(config)
 
@@ -145,20 +151,15 @@ class CosineTrainHeader(nn.Module):
 class TBertSiamese(TBertTwin):
     def __init__(self, config, code_bert):
         super().__init__(config, code_bert)
-
-        self.ctokneizer = AutoTokenizer.from_pretrained(code_bert)
-        self.cbert = AutoModel.from_pretrained(code_bert)
-
         self.ntokenizer = self.ctokneizer
         self.nbert = self.cbert
-        self.cls = RelationClassifyHeader(config)
 
 
 class TBertSingle(PreTrainedModel):
     def __init__(self, config, code_bert):
         super().__init__(config)
         self.tokenizer = AutoTokenizer.from_pretrained(code_bert)
-        self.bert = AutoModel.from_pretrained(code_bert)
+        self.bert = AutoModelForSequenceClassification.from_pretrained(code_bert)
 
     def forward(self, input_ids, attention_mask, token_type_ids, relation_label=None):
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
