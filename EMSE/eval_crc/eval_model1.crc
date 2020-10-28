@@ -1,0 +1,16 @@
+#!/bin/csh
+#$ -l gpu_card=1
+#$ -q gpu     # Specify queue (use ‘debug’ for development)
+#$ -N exp1_m1     #exp1 model 1 (best performance on validation)
+
+module load python/3.7.3
+module load pytorch/1.1.0
+
+set root = "/afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp1"
+cd $root
+
+python eval.py \
+--data_dir ../../data/chinese_only \
+--model_path ./models/model1 \
+--per_gpu_eval_batch_size 4 \
+--exp_name exp1_model1
