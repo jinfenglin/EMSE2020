@@ -17,8 +17,8 @@ from pandas import DataFrame
 
 
 def create_subset(link: DataFrame, source: DataFrame, target: DataFrame, args, sub_set_name):
-    source = source[source.iloc[:, args.sid_col].isin(link.iloc[:, 1])]
-    target = target[target.iloc[:, args.tid_col].isin(link.iloc[:, 2])]
+    source = source[source.iloc[:, args.sid_col].isin(link.iloc[:, 0])]
+    target = target[target.iloc[:, args.tid_col].isin(link.iloc[:, 1])]
     subset_dir = os.path.join(args.out_dir, sub_set_name)
     if not os.path.isdir(subset_dir):
         os.makedirs(subset_dir)
