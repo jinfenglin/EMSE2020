@@ -7,4 +7,4 @@ if __name__ == "__main__":
     for p in projs:
         p = os.path.join(root, p)
         print("python split_examples.py -p {} -o {}".format(p, p))
-        subprocess.run("python split_examples.py -p {} -o {}".format(p, p).split())
+        subprocess.run("python split_examples.py -p {} -o {} -sid_col 0 -tid_col 0".format(p, p).split())

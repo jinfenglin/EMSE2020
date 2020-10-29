@@ -37,8 +37,8 @@ if __name__ == "__main__":
     parser.add_argument("--source", "-s", default="issue.csv", help="file name for source artifacts")
     parser.add_argument("--target", "-t", default="commit.csv", help="file name for target artifacts")
 
-    parser.add_argument("--sid_col", "-si", default=1, help="index for the id column in source artifact")
-    parser.add_argument("--tid_col", "-ti", default=1, help="index for the id column in target artifact")
+    parser.add_argument("--sid_col", "-si", type=int, default=1, help="index for the id column in source artifact")
+    parser.add_argument("--tid_col", "-ti", type= int, default=1, help="index for the id column in target artifact")
     args = parser.parse_args()
 
     link_df = pd.read_csv(os.path.join(args.project_dir, args.link))
