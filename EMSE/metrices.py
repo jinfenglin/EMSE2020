@@ -58,9 +58,9 @@ class metrics:
                 max_threshold = tr
             if f2 >= max_f2:
                 max_f2 = f2
-        viz = PrecisionRecallDisplay(
-            precision=precision, recall=recall)
-        viz.plot()
+        # viz = PrecisionRecallDisplay(
+        #     precision=precision, recall=recall, average_precision=None,estimator_name=None)
+        # viz.plot()
         if os.path.isdir(self.output_dir):
             fig_path = os.path.join(self.output_dir, fig_name)
             plt.savefig(fig_path)
@@ -97,10 +97,23 @@ class metrics:
                     if k < 0 or i <= k:
                         group_hits += 1
                         ap += group_hits / (i + 1)
-            ap = ap / group_pos if group_pos > 0 else 0
+            ap = ap / group_pos if group_pos > 0 else 1
             ap_sum += ap
         map = ap_sum / len(group_tops) if len(group_tops) > 0 else 0
         return round(map, 3)
+
+    def AP(self):
+        sorted = self.data_frame.sort_values(["pred"], ascending=False).reset_index(drop=True)
+        pos = 0
+        hits = 0
+        ap = 0
+        for i, (index, row) in enumerate(sorted.iterrows()):
+            if row['label'] == 1:
+                pos += 1
+                hits += 1
+                ap += hits / (i + 1)
+        ap = ap / pos if pos > 0 else 0
+        return round(ap, 3)
 
     def MRR(self):
         if self.group_sort is None:
@@ -118,37 +131,34 @@ class metrics:
         return mrr_sum / len(group_tops)
 
     def get_all_metrices(self):
-        pk3 = self.precision_at_K(3)
-        pk2 = self.precision_at_K(2)
-        pk1 = self.precision_at_K(1)
-
         best_f1, best_f2, details = self.precision_recall_curve("pr_curve.png")
-        map = self.MAP_at_K(3)
-        mrr = self.MRR()
+        map = self.MAP_at_K()
+        ap = self.AP()
         return {
-            'pk3': pk3,
-            'pk2': pk2,
-            'pk1': pk1,
             'f1': best_f1,
             'f2': best_f2,
             'map': map,
-            'mrr': mrr,
+            'ap': ap,
             'details': details
         }
 
     def write_summary(self, exe_time):
         summary_path = os.path.join(self.output_dir, "summary.txt")
         res = self.get_all_metrices()
-        pk3, pk2, pk1 = res['pk3'], res['pk2'], res['pk1']
+        # pk3, pk2, pk1 = res['pk3'], res['pk2'], res['pk1']
+        pk3, pk2, pk1 = 0, 0, 0
         best_f1, best_f2, details = res['f1'], res['f2'], res['details']
-        map, mrr = res['map'], res['mrr']
-        summary = "\npk3={}, pk2={},pk1={} best_f1 = {}, bets_f2={}, MAP={}, MRR={}, exe_time={}\n".format(pk3, pk2,
-                                                                                                           pk1,
-                                                                                                           best_f1,
-                                                                                                           best_f2,
-                                                                                                           map,
-                                                                                                           mrr,
-                                                                                                           exe_time)
+        # map, mrr, ap = res['map'], res['mrr'], res['ap']
+        map, mrr, ap = res['map'], 0, res['ap']
+        summary = "\npk3={}, pk2={},pk1={} best_f1 = {}, bets_f2={}, MAP={}, MRR={}, AP={}, exe_time={}\n".format(pk3,
+                                                                                                                  pk2,
+                                                                                                                  pk1,
+                                                                                                                  best_f1,
+                                                                                                                  best_f2,
+                                                                                                                  map,
+                                                                                                                  mrr,
+                                                                                                                  ap,
+                                                                                                                  exe_time)
         with open(summary_path, 'w') as fout:
             fout.write(summary)
             fout.write(str(details))
@@ -165,6 +175,7 @@ if __name__ == "__main__":
     ]
     df = pd.DataFrame(test, columns=['s_id', 't_id', 'pred', 'label'])
     m = metrics(df)
-    m.precision_recall_curve('test.png')
+    # m.precision_recall_curve('test.png')
     print(m.precision_at_K(2))
     print(m.MAP_at_K(2))
+    print(m.AP())

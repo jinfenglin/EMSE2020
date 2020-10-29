@@ -4,5 +4,8 @@ data/
 results
 venv
 *.pyc
+output
+evaluation
+.idea/*
 results
-.idea
+models

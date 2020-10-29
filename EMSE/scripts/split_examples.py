@@ -6,6 +6,7 @@ import os
 
 import pandas as pd
 from pandas import DataFrame
+from sklearn.utils import shuffle
 
 """
 -p G:\Document\EMSE\all
@@ -17,8 +18,8 @@ from pandas import DataFrame
 
 
 def create_subset(link: DataFrame, source: DataFrame, target: DataFrame, args, sub_set_name):
-    source = source[source.iloc[:, args.sid_col].isin(link.iloc[:, 1])]
-    target = target[target.iloc[:, args.tid_col].isin(link.iloc[:, 2])]
+    source = source[source.iloc[:, args.sid_col].isin(link.iloc[:, 0])]
+    target = target[target.iloc[:, args.tid_col].isin(link.iloc[:, 1])]
     subset_dir = os.path.join(args.out_dir, sub_set_name)
     if not os.path.isdir(subset_dir):
         os.makedirs(subset_dir)
@@ -41,9 +42,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     link_df = pd.read_csv(os.path.join(args.project_dir, args.link))
+    link_df = shuffle(link_df)
 
-    train_index = int(0.8 * len(link_df))
-    valid_index = int(0.9 * len(link_df))
+    train_index = int(0.80 * len(link_df))
+    valid_index = int(0.90 * len(link_df))
 
     train_links = link_df.iloc[:train_index, :]
     valid_links = link_df.iloc[train_index:valid_index, :]
