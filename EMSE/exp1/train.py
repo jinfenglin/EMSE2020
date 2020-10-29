@@ -172,7 +172,7 @@ def log_train_info(args, example_num, train_steps):
 
 def get_exp_name(args):
     time = datetime.datetime.now().strftime("%m-%d_%H-%M-%S")
-    return str(time)
+    return "{}_{}".format(args.exp_name, str(time))
 
 
 def train(args, train_examples, valid_examples, model, train_iter_method):
@@ -185,8 +185,8 @@ def train(args, train_examples, valid_examples, model, train_iter_method):
     :param train_iter_method: method use for training in each iteration
     :return:
     """
-    if not args.exp_name:
-        args.exp_name = get_exp_name(args)
+
+    args.exp_name = get_exp_name(args)
 
     args.output_dir = os.path.join(args.output_dir, args.exp_name)
     if not os.path.isdir(args.output_dir):
@@ -283,7 +283,7 @@ def get_train_args():
 
     parser.add_argument("--train_num", type=int, default=None,
                         help="number of instances used for training")
-    parser.add_argument("--valid_num", type=int, default=100,
+    parser.add_argument("--valid_num", type=int, default=None,
                         help="number of instances used for evaluating the checkpoint performance")
     parser.add_argument("--neg_sampling", default='random', choices=['random', 'online', 'offline'],
                         help="Negative sampling strategy we apply for constructing dataset. ")
@@ -370,7 +370,10 @@ def init_train_env(args, tbert_type):
         # Make sure only the first process in distributed training will download model & vocab
         torch.distributed.barrier()
 
-    multilingual_BERT = 'bert-base-multilingual-cased'
+    # multilingual_BERT = 'bert-base-multilingual-cased'
+    # multilingual_BERT = 'distilbert-base-multilingual-cased'
+    multilingual_BERT = 'bert-base-cased'
+    # multilingual_BERT = "microsoft/Multilingual-MiniLM-L12-H384"
     if tbert_type == 'twin' or tbert_type == "T":
         model = TBertTwin(BertConfig(), multilingual_BERT)
     elif tbert_type == 'siamese' or tbert_type == "I":
@@ -403,8 +406,8 @@ def init_train_env(args, tbert_type):
 def main():
     args = get_train_args()
     model = init_train_env(args, tbert_type='siamese')
-    train_examples = load_examples(os.path.join(args.data_dir, "train"), model=model)
-    valid_examples = load_examples(os.path.join(args.data_dir, "valid"), model=model)
+    train_examples = load_examples(os.path.join(args.data_dir, "train"), model=model, num_limit=args.train_num)
+    valid_examples = load_examples(os.path.join(args.data_dir, "valid"), model=model, num_limit=args.valid_num)
     train(args, train_examples, valid_examples, model, train_iter_method=train_with_neg_sampling)
     logger.info("Training finished")
 

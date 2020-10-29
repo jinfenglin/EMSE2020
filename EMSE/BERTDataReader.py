@@ -1,13 +1,26 @@
 import logging
 import os
+import re
+
 import pandas as pd
+import numpy as np
 
 from EMSE.data_structures import Examples
 
 logger = logging.getLogger(__name__)
 
+url_pattern = "[\(]?((http|https)\:\/\/)[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*[\)]?"
+
 
 def short_text(text, max_length=1000):
+    origin_text = text
+    text = re.sub("[-+#@]+", " ", text)
+    text = re.sub("={2,}", " ", text)
+    text = re.sub("[#@]{2,}", " ", text)
+    text = re.sub("```.+```", " ", text)
+    text = re.sub("\[.*\]", " ", text)
+    text = re.sub(url_pattern, " ", text)
+
     tokens = [x for x in text.split() if len(x) > 0]
     return " ".join(tokens[: max_length])
 
@@ -57,7 +70,7 @@ class Commit:
 
 def __read_artifacts(file_path, type):
     df = pd.read_csv(file_path)
-    df = df.replace(pd.np.nan, regex=True)
+    df = df.replace(np.nan, regex=True)
     arti = []
     for index, row in df.iterrows():
         if type == 'commit':

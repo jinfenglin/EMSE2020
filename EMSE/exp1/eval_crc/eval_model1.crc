@@ -10,8 +10,8 @@ set root = "/afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp1"
 cd $root
 
 python eval.py \
---data_dir ../../data/chinese_only \
+--data_dir ../data/chinese_only \
 --model_path ./models/model1 \
 --per_gpu_eval_batch_size 4 \
---exp_name exp1_model1
+--exp_name exp1_model1 \
 --lm distilbert-base-multilingual-cased
