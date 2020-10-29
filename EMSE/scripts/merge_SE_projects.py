@@ -40,18 +40,19 @@ def merge_projects(project_list, out_dir):
 
         link_df['issue_id'] = ["{}_{}".format(p_name, x) for x in link_df['issue_id']]
 
-        issue_df.to_csv(os.path.join(out_dir, "issue.csv"), mode=write_mode, header=header_flag)
-        commit_df.to_csv(os.path.join(out_dir, "commit.csv"), mode=write_mode, header=header_flag)
+        issue_df.to_csv(os.path.join(out_dir, "issue.csv"), mode=write_mode, header=header_flag, index=False)
+        commit_df.to_csv(os.path.join(out_dir, "commit.csv"), mode=write_mode, header=header_flag, index=False)
 
-        clean_token_issue_df.to_csv(os.path.join(out_dir, "clean_token_issue.csv"), mode=write_mode, header=header_flag)
+        clean_token_issue_df.to_csv(os.path.join(out_dir, "clean_token_issue.csv"), mode=write_mode, header=header_flag,
+                                    index=False)
         clean_token_commit_df.to_csv(os.path.join(out_dir, "clean_token_commit.csv"), mode=write_mode,
-                                     header=header_flag)
+                                     header=header_flag, index=False)
         translated_issue_df.to_csv(os.path.join(out_dir, "translated_token_issue.csv"), mode=write_mode,
-                                   header=header_flag)
+                                   header=header_flag, index=False)
         translated_commit_df.to_csv(os.path.join(out_dir, "translated_token_commit.csv"), mode=write_mode,
-                                    header=header_flag)
+                                    header=header_flag, index=False)
 
-        link_df.to_csv(os.path.join(out_dir, "links.csv"), mode=write_mode, header=header_flag)
+        link_df.to_csv(os.path.join(out_dir, "links.csv"), mode=write_mode, header=header_flag, index=False)
 
         write_mode = 'a'
         header_flag = False
