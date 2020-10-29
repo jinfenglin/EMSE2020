@@ -6,6 +6,6 @@ venv
 *.pyc
 output
 evaluation
-.idea/
+.idea/*
 results
 models
