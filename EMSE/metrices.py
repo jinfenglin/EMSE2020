@@ -145,16 +145,20 @@ class metrics:
     def write_summary(self, exe_time):
         summary_path = os.path.join(self.output_dir, "summary.txt")
         res = self.get_all_metrices()
-        pk3, pk2, pk1 = res['pk3'], res['pk2'], res['pk1']
+        # pk3, pk2, pk1 = res['pk3'], res['pk2'], res['pk1']
+        pk3, pk2, pk1 = 0, 0, 0
         best_f1, best_f2, details = res['f1'], res['f2'], res['details']
-        map, mrr, ap = res['map'], res['mrr'], res['ap']
-        summary = "\npk3={}, pk2={},pk1={} best_f1 = {}, bets_f2={}, MAP={}, MRR={}, exe_time={}\n".format(pk3, pk2,
-                                                                                                           pk1,
-                                                                                                           best_f1,
-                                                                                                           best_f2,
-                                                                                                           map,
-                                                                                                           mrr,
-                                                                                                           exe_time)
+        # map, mrr, ap = res['map'], res['mrr'], res['ap']
+        map, mrr, ap = res['map'], 0, res['ap']
+        summary = "\npk3={}, pk2={},pk1={} best_f1 = {}, bets_f2={}, MAP={}, MRR={}, AP={}, exe_time={}\n".format(pk3,
+                                                                                                                  pk2,
+                                                                                                                  pk1,
+                                                                                                                  best_f1,
+                                                                                                                  best_f2,
+                                                                                                                  map,
+                                                                                                                  mrr,
+                                                                                                                  ap,
+                                                                                                                  exe_time)
         with open(summary_path, 'w') as fout:
             fout.write(summary)
             fout.write(str(details))
