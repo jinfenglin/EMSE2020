@@ -6,12 +6,13 @@ import sys
 import torch
 from torch.optim import AdamW
 
+sys.path.append("../..")
+sys.path.append("../../..")
+
 from EMSE.BERTDataReader import load_examples
 from EMSE.data_structures import Examples
 from EMSE.models import TBertTwin, TBertSiamese, TBertSingle
 
-sys.path.append("../..")
-sys.path.append("../../..")
 
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import trange, tqdm
@@ -192,7 +193,7 @@ def train(args, train_examples, valid_examples, model, train_iter_method):
     if not os.path.isdir(args.output_dir):
         os.makedirs(args.output_dir)
     if args.local_rank in [-1, 0]:
-        tb_writer = SummaryWriter(log_dir="./runs/{}".format(args. ))
+        tb_writer = SummaryWriter(log_dir="./runs/{}".format(args.exp_name))
 
     args.train_batch_size = args.per_gpu_train_batch_size * max(1, args.n_gpu)
     example_num = 2 * len(train_examples)  # 50/50 of pos/neg
@@ -370,7 +371,7 @@ def init_train_env(args, tbert_type):
         # Make sure only the first process in distributed training will download model & vocab
         torch.distributed.barrier()
 
-    multilingual_BERT = 'bert-base-multilingual-cased'
+    multilingual_BERT = 'distilbert-base-multilingual-cased'
     if tbert_type == 'twin' or tbert_type == "T":
         model = TBertTwin(BertConfig(), multilingual_BERT)
     elif tbert_type == 'siamese' or tbert_type == "I":
