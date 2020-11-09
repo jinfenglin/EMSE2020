@@ -8,6 +8,10 @@ import pandas as pd
 
 logger = logging.getLogger(__name__)
 
+"""
+for Exp1 usage. 
+Merge the whole project for splition later
+"""
 
 def is_allowed_projects(allowed_projects: List, dir_path: str):
     dir_name = os.path.basename(dir_path)
@@ -27,31 +31,34 @@ def merge_projects(project_list, out_dir):
         commit_df = pd.read_csv(os.path.join(p, "commit.csv"))
         link_df = pd.read_csv(os.path.join(p, "links.csv"))
 
-        clean_token_issue_df = pd.read_csv(os.path.join(p, "clean_token_data", "issue.csv"))
-        clean_token_commit_df = pd.read_csv(os.path.join(p, "clean_token_data", "commit.csv"))
+        clean_token_dir = os.path.join(p, "clean_token_data")
+        if os.path.isdir(clean_token_dir):
+            clean_token_issue_df = pd.read_csv(os.path.join(clean_token_dir, "issue.csv"))
+            clean_token_commit_df = pd.read_csv(os.path.join(clean_token_dir, "commit.csv"))
+            clean_token_issue_df['issue_id'] = ["{}_{}".format(p_name, x) for x in clean_token_issue_df['issue_id']]
+            clean_token_issue_df.to_csv(os.path.join(out_dir, "clean_token_issue.csv"), mode=write_mode,
+                                        header=header_flag,
+                                        index=False)
+            clean_token_commit_df.to_csv(os.path.join(out_dir, "clean_token_commit.csv"), mode=write_mode,
+                                         header=header_flag, index=False)
 
-        translated_issue_df = pd.read_csv(os.path.join(p, "translated_data", "clean_translated_tokens", "issue.csv"))
-        translated_commit_df = pd.read_csv(os.path.join(p, "translated_data", "clean_translated_tokens", "commit.csv"))
+        trans_token_dir = os.path.join(p, "translated_data", "clean_translated_tokens")
+        if os.path.isdir(trans_token_dir):
+            translated_issue_df = pd.read_csv(
+                os.path.join(p, "translated_data", "clean_translated_tokens", "issue.csv"))
+            translated_commit_df = pd.read_csv(
+                os.path.join(p, "translated_data", "clean_translated_tokens", "commit.csv"))
+            translated_issue_df['issue_id'] = ["{}_{}".format(p_name, x) for x in translated_issue_df['issue_id']]
+            translated_issue_df.to_csv(os.path.join(out_dir, "translated_token_issue.csv"), mode=write_mode,
+                                       header=header_flag, index=False)
+            translated_commit_df.to_csv(os.path.join(out_dir, "translated_token_commit.csv"), mode=write_mode,
+                                        header=header_flag, index=False)
 
         # rename issue id to avoid conflict
         issue_df['issue_id'] = ["{}_{}".format(p_name, x) for x in issue_df['issue_id']]
-        clean_token_issue_df['issue_id'] = ["{}_{}".format(p_name, x) for x in clean_token_issue_df['issue_id']]
-        translated_issue_df['issue_id'] = ["{}_{}".format(p_name, x) for x in translated_issue_df['issue_id']]
-
         link_df['issue_id'] = ["{}_{}".format(p_name, x) for x in link_df['issue_id']]
-
         issue_df.to_csv(os.path.join(out_dir, "issue.csv"), mode=write_mode, header=header_flag, index=False)
         commit_df.to_csv(os.path.join(out_dir, "commit.csv"), mode=write_mode, header=header_flag, index=False)
-
-        clean_token_issue_df.to_csv(os.path.join(out_dir, "clean_token_issue.csv"), mode=write_mode, header=header_flag,
-                                    index=False)
-        clean_token_commit_df.to_csv(os.path.join(out_dir, "clean_token_commit.csv"), mode=write_mode,
-                                     header=header_flag, index=False)
-        translated_issue_df.to_csv(os.path.join(out_dir, "translated_token_issue.csv"), mode=write_mode,
-                                   header=header_flag, index=False)
-        translated_commit_df.to_csv(os.path.join(out_dir, "translated_token_commit.csv"), mode=write_mode,
-                                    header=header_flag, index=False)
-
         link_df.to_csv(os.path.join(out_dir, "links.csv"), mode=write_mode, header=header_flag, index=False)
 
         write_mode = 'a'
@@ -83,9 +90,5 @@ if __name__ == "__main__":
             if not is_allowed_projects(args.allowed_projects, dir_path):
                 continue
             project_paths.append(dir_path)
-    if len(args.allowed_projects) == 0:
-        logger.info("Process {} projects".format(len(project_paths)))
-    else:
-        for p in args.allowed_projects:
-            assert p in args.allowed_projects, p
+
     merge_projects(project_paths, args.out_dir)
