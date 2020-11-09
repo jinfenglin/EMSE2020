@@ -12,11 +12,14 @@ from EMSE.scripts.merge_SE_projects import is_allowed_projects
 logger = logging.getLogger(__name__)
 
 
-def collect(in_dir):
+def collect(in_dir, p_name):
     cm = os.path.join(in_dir, "commit.csv")
     iss = os.path.join(in_dir, "issue.csv")
     lk = os.path.join(in_dir, "links.csv")
-    return pd.read_csv(cm), pd.read_csv(iss), pd.read_csv(lk)
+    cm_dff, iss_df, lk_df = pd.read_csv(cm), pd.read_csv(iss), pd.read_csv(lk)
+    iss_df['issue_id'] = ["{}_{}".format(p_name, x) for x in iss_df['issue_id']]
+    lk_df['issue_id'] = ["{}_{}".format(p_name, x) for x in lk_df['issue_id']]
+    return cm_dff, iss_df, lk_df
 
 
 def merge_example(project_list, out_dir):
@@ -24,15 +27,16 @@ def merge_example(project_list, out_dir):
     for t in types:
         cm_dfs, iss_dfs, lk_dfs = [], [], []
         for p in project_list:
+            p_name = os.path.basename(p)
             in_dir = os.path.join(p, t)
-            cm_df, iss_df, lk_df = collect(in_dir)
+            cm_df, iss_df, lk_df = collect(in_dir, p_name)
             cm_dfs.append(cm_df)
             iss_dfs.append(iss_df)
             lk_dfs.append(lk_df)
         out_path = os.path.join(out_dir, t)
         if not os.path.isdir(out_path):
             os.makedirs(out_path)
-        pd.concat(cm_dfs, ignore_index=True).to_csv(os.path.join(out_path, "commit.csv"),index=False)
+        pd.concat(cm_dfs, ignore_index=True).to_csv(os.path.join(out_path, "commit.csv"), index=False)
         pd.concat(iss_dfs, ignore_index=True).to_csv(os.path.join(out_path, "issue.csv"), index=False)
         pd.concat(lk_dfs, ignore_index=True).to_csv(os.path.join(out_path, "link.csv"), index=False)
 
