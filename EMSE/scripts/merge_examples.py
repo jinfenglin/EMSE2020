@@ -2,12 +2,16 @@ import argparse
 import logging
 import os
 import pandas as pd
+import sys
+
+sys.path.append("..")
+sys.path.append(".")
 
 """
 For exp2 usage.
 Merge the train/valid/test examples instead of the whole projects
 """
-from EMSE.scripts.merge_SE_projects import is_allowed_projects
+from merge_SE_projects import is_allowed_projects
 
 logger = logging.getLogger(__name__)
 
