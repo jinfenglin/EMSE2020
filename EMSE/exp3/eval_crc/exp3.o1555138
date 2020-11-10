@@ -1,0 +1,122 @@
+Loading python/3.7.3
+  Loading requirement: tcl/8.6.8 gcc/8.3.0
+Loading pytorch/1.1.0
+  Loading requirement: cuda/10.0 cudnn/7.4
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+INFO:transformers.configuration_utils:Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+INFO:transformers.tokenization_utils_base:loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-cased-vocab.txt from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/96435fa287fbf7e469185f1062386e05a075cadbf6838b74da22bf64b080bc32.99bcd55fc66f4f3360bc49ba472b940b8dcf223ea6a345deb969d607ca900729
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+INFO:transformers.configuration_utils:Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+INFO:transformers.modeling_utils:loading weights file https://cdn.huggingface.co/distilbert-base-multilingual-cased-pytorch_model.bin from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/72a6c787412704a6fa6f5d9e5ef7d33c5b80c787e2bbc7d9ad82d7f88fb8f802.89fad86febf14521569023d312560283a922c0884a52f412eef4e96f91513ab2
+INFO:transformers.modeling_utils:All model checkpoint weights were used when initializing DistilBertModel.
+
+INFO:transformers.modeling_utils:All the weights of DistilBertModel were initialized from the model checkpoint at distilbert-base-multilingual-cased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use DistilBertModel for predictions without further training.
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+INFO:transformers.configuration_utils:Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+INFO:transformers.tokenization_utils_base:loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-cased-vocab.txt from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/96435fa287fbf7e469185f1062386e05a075cadbf6838b74da22bf64b080bc32.99bcd55fc66f4f3360bc49ba472b940b8dcf223ea6a345deb969d607ca900729
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+INFO:transformers.configuration_utils:Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+INFO:transformers.modeling_utils:loading weights file https://cdn.huggingface.co/distilbert-base-multilingual-cased-pytorch_model.bin from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/72a6c787412704a6fa6f5d9e5ef7d33c5b80c787e2bbc7d9ad82d7f88fb8f802.89fad86febf14521569023d312560283a922c0884a52f412eef4e96f91513ab2
+INFO:transformers.modeling_utils:All model checkpoint weights were used when initializing DistilBertModel.
+
+INFO:transformers.modeling_utils:All the weights of DistilBertModel were initialized from the model checkpoint at distilbert-base-multilingual-cased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use DistilBertModel for predictions without further training.
+INFO:__main__:model loaded
+INFO:EMSE.BERTDataReader:Creating examples from dataset file at /afs/crc.nd.edu/user/j/jlin6/data/EMSE/arthas/test
+update feature:   0%|          | 0/17 [00:00<?, ?it/s]update feature:   6%|▌         | 1/17 [00:00<00:05,  3.01it/s]update feature: 100%|██████████| 17/17 [00:00<00:00, 44.75it/s]
+update feature:   0%|          | 0/17 [00:00<?, ?it/s]update feature: 100%|██████████| 17/17 [00:00<00:00, 301.46it/s]
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s]update embedding:   6%|▌         | 1/17 [00:02<00:39,  2.49s/it]update embedding:  12%|█▏        | 2/17 [00:03<00:30,  2.00s/it]update embedding:  18%|█▊        | 3/17 [00:04<00:23,  1.65s/it]update embedding:  24%|██▎       | 4/17 [00:05<00:18,  1.42s/it]update embedding:  29%|██▉       | 5/17 [00:05<00:14,  1.25s/it]update embedding:  35%|███▌      | 6/17 [00:06<00:12,  1.13s/it]update embedding:  41%|████      | 7/17 [00:07<00:10,  1.04s/it]update embedding:  47%|████▋     | 8/17 [00:08<00:08,  1.02it/s]update embedding:  53%|█████▎    | 9/17 [00:09<00:07,  1.07it/s]update embedding:  59%|█████▉    | 10/17 [00:10<00:06,  1.09it/s]update embedding:  65%|██████▍   | 11/17 [00:10<00:05,  1.12it/s]update embedding:  71%|███████   | 12/17 [00:11<00:04,  1.15it/s]update embedding:  76%|███████▋  | 13/17 [00:12<00:03,  1.16it/s]update embedding:  82%|████████▏ | 14/17 [00:13<00:02,  1.02it/s]update embedding:  88%|████████▊ | 15/17 [00:14<00:01,  1.06it/s]update embedding:  94%|█████████▍| 16/17 [00:15<00:00,  1.08it/s]update embedding: 100%|██████████| 17/17 [00:16<00:00,  1.11it/s]update embedding: 100%|██████████| 17/17 [00:16<00:00,  1.03it/s]
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s]update embedding:   6%|▌         | 1/17 [00:00<00:13,  1.15it/s]update embedding:  12%|█▏        | 2/17 [00:01<00:12,  1.17it/s]update embedding:  18%|█▊        | 3/17 [00:02<00:11,  1.17it/s]update embedding:  24%|██▎       | 4/17 [00:03<00:11,  1.18it/s]update embedding:  29%|██▉       | 5/17 [00:04<00:10,  1.18it/s]update embedding:  35%|███▌      | 6/17 [00:05<00:09,  1.19it/s]update embedding:  41%|████      | 7/17 [00:05<00:08,  1.18it/s]update embedding:  47%|████▋     | 8/17 [00:06<00:07,  1.18it/s]update embedding:  53%|█████▎    | 9/17 [00:07<00:06,  1.19it/s]update embedding:  59%|█████▉    | 10/17 [00:08<00:05,  1.20it/s]update embedding:  65%|██████▍   | 11/17 [00:09<00:04,  1.20it/s]update embedding:  71%|███████   | 12/17 [00:10<00:04,  1.21it/s]update embedding:  76%|███████▋  | 13/17 [00:10<00:03,  1.20it/s]update embedding:  82%|████████▏ | 14/17 [00:11<00:02,  1.20it/s]update embedding:  88%|████████▊ | 15/17 [00:12<00:01,  1.21it/s]update embedding:  94%|█████████▍| 16/17 [00:13<00:00,  1.21it/s]update embedding: 100%|██████████| 17/17 [00:14<00:00,  1.21it/s]update embedding: 100%|██████████| 17/17 [00:14<00:00,  1.20it/s]
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s]retrival evaluation:   7%|▋         | 5/73 [00:00<00:01, 46.38it/s]retrival evaluation:  18%|█▊        | 13/73 [00:00<00:01, 51.91it/s]retrival evaluation:  29%|██▉       | 21/73 [00:00<00:00, 56.87it/s]retrival evaluation:  40%|███▉      | 29/73 [00:00<00:00, 60.93it/s]retrival evaluation:  49%|████▉     | 36/73 [00:00<00:00, 62.42it/s]retrival evaluation:  60%|██████    | 44/73 [00:00<00:00, 65.25it/s]retrival evaluation:  71%|███████   | 52/73 [00:00<00:00, 67.36it/s]retrival evaluation:  82%|████████▏ | 60/73 [00:00<00:00, 69.01it/s]retrival evaluation:  93%|█████████▎| 68/73 [00:00<00:00, 69.75it/s]retrival evaluation: 100%|██████████| 73/73 [00:01<00:00, 69.96it/s]
+
+pk3=0, pk2=0,pk1=0 best_f1 = 0.714, bets_f2=0.816, MAP=0.858, MRR=0, AP=0.727, exe_time=38.55768442153931
+
