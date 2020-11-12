@@ -1,0 +1,12 @@
+Loading python/3.7.3
+  Loading requirement: tcl/8.6.8 gcc/8.3.0
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+0 issues and 0 commits remains after limiting artifacts to links...
+Building GVSM model...
+Building en word embedding ...
+vector #:2519370 vector dimension:300
+Finish building GVSM model
+Processing link set issues-commits
+origin MAP= 0.0
+Origin P,C,F
+[(0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0)]
