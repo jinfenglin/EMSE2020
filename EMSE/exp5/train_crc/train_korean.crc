@@ -1,0 +1,27 @@
+#!/bin/csh
+#$ -l gpu_card=1
+#$ -q gpu
+#$ -N train_korean    # train on korean project
+
+module load python/3.7.3
+module load pytorch/1.7.0
+
+set root = "/afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp5"
+cd $root
+
+python train.py \
+    --data_dir ~/data/EMSE/konlpy \
+    --model_path /afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp3/models/model1 \
+    --output_dir ./output \
+    --per_gpu_train_batch_size 4 \
+    --per_gpu_eval_batch_size 4 \
+    --logging_steps 10 \
+    --learning_rate 1e-5 \
+    --save_epoch 5 \
+    --gradient_accumulation_steps 2 \
+    --num_train_epochs 20 \
+    --valid_num 200 \
+    --valid_epoch 5 \
+    --neg_sampling online \
+    --exp_name konlp \
+    --overwrite

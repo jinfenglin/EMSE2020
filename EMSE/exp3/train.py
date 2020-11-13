@@ -5,13 +5,12 @@ import os
 import sys
 import torch
 from torch.optim import AdamW
+sys.path.append("../..")
+sys.path.append("../../..")
 
 from EMSE.BERTDataReader import load_examples
 from EMSE.data_structures import Examples
 from EMSE.models import TBertTwin, TBertSiamese, TBertSingle
-
-sys.path.append("../..")
-sys.path.append("../../..")
 
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import trange, tqdm
@@ -371,8 +370,8 @@ def init_train_env(args, tbert_type):
         torch.distributed.barrier()
 
     # multilingual_BERT = 'bert-base-multilingual-cased'
-    # multilingual_BERT = 'distilbert-base-multilingual-cased'
-    multilingual_BERT = 'bert-base-cased'
+    multilingual_BERT = 'distilbert-base-multilingual-cased'
+    # multilingual_BERT = 'bert-base-cased'
     # multilingual_BERT = "microsoft/Multilingual-MiniLM-L12-H384"
     if tbert_type == 'twin' or tbert_type == "T":
         model = TBertTwin(BertConfig(), multilingual_BERT)

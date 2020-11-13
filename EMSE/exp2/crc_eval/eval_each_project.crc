@@ -1,0 +1,24 @@
+#!/bin/csh
+#$ -l gpu_card=1
+#$ -q gpu     # Specify queue (use ‘debug’ for development)
+#$ -N exp3_eval     #exp3 (merge train + few shot)
+
+module load python/3.7.3
+module load pytorch/1.1.0
+
+set root = "/afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp2"
+cd $root
+
+# arthas bk-cmdb canal druid Emmagee nacos ncnn pegasus QMUI_Android QMUI_iOS rax san weui xLua
+
+# foreach x (arthas bk-cmdb canal druid Emmagee nacos ncnn pegasus QMUI_Android QMUI_iOS rax san weui xLua)
+foreach x (san)
+    set model_path = ./ouput/x/epoch-ckp-90
+    python eval.py \
+    --data_dir "/afs/crc.nd.edu/user/j/jlin6/data/EMSE/$x" \
+    --model_path $model_path \
+    --per_gpu_eval_batch_size 4 \
+    --exp_name "exp2_$x" \
+    --lm distilbert-base-multilingual-cased \
+    --overwrite
+end

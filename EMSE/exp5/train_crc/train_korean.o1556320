@@ -1,0 +1,853 @@
+Loading python/3.7.3
+  Loading requirement: tcl/8.6.8 gcc/8.3.0
+ERROR: Unable to locate a modulefile for 'pytorch/1.7.0'
+11/10/2020 01:51:02 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 1, distributed training: False, 16-bits training: False
+11/10/2020 01:51:02 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+11/10/2020 01:51:02 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+11/10/2020 01:51:02 - INFO - transformers.tokenization_utils_base -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-cased-vocab.txt from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/96435fa287fbf7e469185f1062386e05a075cadbf6838b74da22bf64b080bc32.99bcd55fc66f4f3360bc49ba472b940b8dcf223ea6a345deb969d607ca900729
+11/10/2020 01:51:03 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+11/10/2020 01:51:03 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+11/10/2020 01:51:03 - INFO - transformers.modeling_utils -   loading weights file https://cdn.huggingface.co/distilbert-base-multilingual-cased-pytorch_model.bin from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/72a6c787412704a6fa6f5d9e5ef7d33c5b80c787e2bbc7d9ad82d7f88fb8f802.89fad86febf14521569023d312560283a922c0884a52f412eef4e96f91513ab2
+11/10/2020 01:51:07 - INFO - transformers.modeling_utils -   All model checkpoint weights were used when initializing DistilBertModel.
+
+11/10/2020 01:51:07 - INFO - transformers.modeling_utils -   All the weights of DistilBertModel were initialized from the model checkpoint at distilbert-base-multilingual-cased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use DistilBertModel for predictions without further training.
+11/10/2020 01:51:07 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+11/10/2020 01:51:07 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+11/10/2020 01:51:07 - INFO - transformers.tokenization_utils_base -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-cased-vocab.txt from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/96435fa287fbf7e469185f1062386e05a075cadbf6838b74da22bf64b080bc32.99bcd55fc66f4f3360bc49ba472b940b8dcf223ea6a345deb969d607ca900729
+11/10/2020 01:51:07 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+11/10/2020 01:51:07 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+11/10/2020 01:51:07 - INFO - transformers.modeling_utils -   loading weights file https://cdn.huggingface.co/distilbert-base-multilingual-cased-pytorch_model.bin from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/72a6c787412704a6fa6f5d9e5ef7d33c5b80c787e2bbc7d9ad82d7f88fb8f802.89fad86febf14521569023d312560283a922c0884a52f412eef4e96f91513ab2
+11/10/2020 01:51:11 - INFO - transformers.modeling_utils -   All model checkpoint weights were used when initializing DistilBertModel.
+
+11/10/2020 01:51:11 - INFO - transformers.modeling_utils -   All the weights of DistilBertModel were initialized from the model checkpoint at distilbert-base-multilingual-cased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use DistilBertModel for predictions without further training.
+11/10/2020 01:51:15 - INFO - __main__ -   Training/evaluation parameters Namespace(adam_epsilon=1e-08, data_dir='/afs/crc.nd.edu/user/j/jlin6/data/EMSE/konlpy', device=device(type='cuda'), exp_name='konlp', fp16=False, fp16_opt_level='O1', gradient_accumulation_steps=2, hard_ratio=0.5, learning_rate=1e-05, local_rank=-1, logging_steps=10, max_grad_norm=1.0, max_steps=-1, model_path='/afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp3/models/model1', n_gpu=1, neg_sampling='online', no_cuda=False, num_train_epochs=20.0, output_dir='./output', overwrite=True, per_gpu_eval_batch_size=4, per_gpu_train_batch_size=4, save_epoch=5, save_steps=-1, seed=42, tbert_type='siamese', train_num=None, valid_epoch=5, valid_num=200, valid_step=-1, warmup_steps=0, weight_decay=0.0)
+11/10/2020 01:51:15 - INFO - EMSE.BERTDataReader -   Creating examples from dataset file at /afs/crc.nd.edu/user/j/jlin6/data/EMSE/konlpy/train
+update feature:   0%|          | 0/10 [00:00<?, ?it/s]update feature: 100%|██████████| 10/10 [00:00<00:00, 1029.68it/s]
+update feature:   0%|          | 0/10 [00:00<?, ?it/s]update feature: 100%|██████████| 10/10 [00:00<00:00, 547.23it/s]
+11/10/2020 01:51:15 - INFO - EMSE.BERTDataReader -   Creating examples from dataset file at /afs/crc.nd.edu/user/j/jlin6/data/EMSE/konlpy/valid
+update feature:   0%|          | 0/11 [00:00<?, ?it/s]update feature: 100%|██████████| 11/11 [00:00<00:00, 275.35it/s]
+update feature:   0%|          | 0/11 [00:00<?, ?it/s]update feature: 100%|██████████| 11/11 [00:00<00:00, 307.79it/s]
+11/10/2020 01:51:15 - INFO - __main__ -   ***** Running training *****
+11/10/2020 01:51:15 - INFO - __main__ -     Num examples = 20
+11/10/2020 01:51:15 - INFO - __main__ -     Num Epochs = 20
+11/10/2020 01:51:15 - INFO - __main__ -     Instantaneous batch size per GPU = 4
+11/10/2020 01:51:15 - INFO - __main__ -     Total train batch size (w. parallel, distributed & accumulation) = 8
+11/10/2020 01:51:15 - INFO - __main__ -     Gradient Accumulation steps = 2
+11/10/2020 01:51:15 - INFO - __main__ -     Total optimization steps = 40
+11/10/2020 01:51:15 - INFO - EMSE.utils -   Loading checkpoint from /afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp3/models/model1, remove optimizer and scheduler if you do not want to load them
+11/10/2020 01:51:22 - INFO - EMSE.utils -   Loading optimizer...
+11/10/2020 01:51:36 - INFO - EMSE.utils -   Loading scheduler...
+/afs/crc.nd.edu/user/j/jlin6/.local/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:234: UserWarning: Please also save or load the state of the optimizer when saving or loading the scheduler.
+  warnings.warn(SAVE_STATE_WARNING, UserWarning)
+11/10/2020 01:51:36 - INFO - __main__ -     Continuing training from checkpoint, will skip to saved global_step
+11/10/2020 01:51:36 - INFO - __main__ -     Continuing training from epoch 150, global step 15704
+Epoch:   0%|          | 0/50 [00:00<?, ?it/s]
+Steps: 150it [00:00, ?it/s][A11/10/2020 01:51:36 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-150
+/afs/crc.nd.edu/user/j/jlin6/.local/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:216: UserWarning: Please also save or load the state of the optimizer when saving or loading the scheduler.
+  warnings.warn(SAVE_STATE_WARNING, UserWarning)
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 77.11it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 78.04it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 80.86it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 81.35it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 56402.62it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.94it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.99it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.50it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.58it/s]
+
+                           [A                                             
+Steps: 150it [00:25,  5.98it/s][AEpoch:   0%|          | 0/50 [00:25<?, ?it/s]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  31%|███▏      | 5/16 [00:00<00:00, 47.73it/s][A[A
+
+retrival evaluation:  62%|██████▎   | 10/16 [00:00<00:00, 47.99it/s][A[A
+
+retrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 49.97it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 50.55it/s]
+Epoch:   2%|▏         | 1/50 [00:25<20:50, 25.51s/it]11/10/2020 01:52:04 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-151
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 75.00it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 77.29it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 86.07it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 85.86it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 33240.16it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  7.14it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  7.12it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.59it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.63it/s]
+
+                               [A                                                     
+Steps: 150it [00:53,  2.79it/s][AEpoch:   2%|▏         | 1/50 [00:53<20:50, 25.51s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 52.37it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 52.74it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 54.92it/s]
+Epoch:   4%|▍         | 2/50 [00:54<21:10, 26.47s/it]11/10/2020 01:52:32 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-152
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 77.85it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 78.57it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 79.70it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 80.15it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 57599.68it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.82it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.89it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.41it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.50it/s]
+
+                               [A                                                     
+Steps: 150it [01:22,  1.81it/s][AEpoch:   4%|▍         | 2/50 [01:22<21:10, 26.47s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 53.26it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 54.06it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 56.52it/s]
+Epoch:   6%|▌         | 3/50 [01:23<21:21, 27.27s/it]11/10/2020 01:53:01 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-153
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 86.23it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 86.25it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 87.43it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 86.93it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 56889.45it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  7.03it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  7.03it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.51it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.56it/s]
+
+                               [A                                                     
+Steps: 150it [01:50,  1.36it/s][AEpoch:   6%|▌         | 3/50 [01:50<21:21, 27.27s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  31%|███▏      | 5/16 [00:00<00:00, 48.54it/s][A[A
+
+retrival evaluation:  62%|██████▎   | 10/16 [00:00<00:00, 48.82it/s][A[A
+
+retrival evaluation:  94%|█████████▍| 15/16 [00:00<00:00, 48.74it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 50.52it/s]
+Epoch:   8%|▊         | 4/50 [01:50<20:57, 27.33s/it]11/10/2020 01:53:29 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-154
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 79.53it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 79.65it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 79.23it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 80.20it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 56679.78it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.81it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.89it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.41it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.51it/s]
+
+                               [A                                                     
+Steps: 150it [02:23,  1.05it/s][AEpoch:   8%|▊         | 4/50 [02:23<20:57, 27.33s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  31%|███▏      | 5/16 [00:00<00:00, 49.18it/s][A[A
+
+retrival evaluation:  62%|██████▎   | 10/16 [00:00<00:00, 48.70it/s][A[A
+
+retrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 51.02it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 51.35it/s]
+Epoch:  10%|█         | 5/50 [02:23<21:42, 28.93s/it]11/10/2020 01:54:01 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-155
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 77.13it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 77.75it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 81.26it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 81.39it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 50149.29it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.88it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.92it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.33it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.39it/s]
+
+                               [A                                                     
+Steps: 150it [02:50,  1.14s/it][AEpoch:  10%|█         | 5/50 [02:50<21:42, 28.93s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  25%|██▌       | 4/16 [00:00<00:00, 38.25it/s][A[A
+
+retrival evaluation:  62%|██████▎   | 10/16 [00:00<00:00, 41.66it/s][A[A
+
+retrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 45.30it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 49.31it/s]
+Epoch:  12%|█▏        | 6/50 [02:50<20:51, 28.45s/it]11/10/2020 01:54:29 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-156
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 83.07it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 83.74it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 85.43it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 85.72it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 60707.03it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  7.07it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  7.06it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.52it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.57it/s]
+
+                               [A                                                     
+Steps: 150it [03:17,  1.32s/it][AEpoch:  12%|█▏        | 6/50 [03:17<20:51, 28.45s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  31%|███▏      | 5/16 [00:00<00:00, 44.28it/s][A[A
+
+retrival evaluation:  69%|██████▉   | 11/16 [00:00<00:00, 47.20it/s][A[A
+
+retrival evaluation:  94%|█████████▍| 15/16 [00:00<00:00, 44.52it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 48.19it/s]
+Epoch:  14%|█▍        | 7/50 [03:18<20:09, 28.12s/it]11/10/2020 01:54:56 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-157
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 73.76it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 74.67it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 80.78it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 81.13it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 58180.76it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.86it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.93it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.43it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.52it/s]
+
+                               [A                                                     
+Steps: 150it [03:48,  1.52s/it][AEpoch:  14%|█▍        | 7/50 [03:48<20:09, 28.12s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 54.36it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 55.37it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 57.50it/s]
+Epoch:  16%|█▌        | 8/50 [03:48<20:13, 28.90s/it]11/10/2020 01:55:27 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-158
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 87.49it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 87.55it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 89.06it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 88.77it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 63029.16it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  7.09it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  7.07it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.54it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.58it/s]
+
+                               [A                                                     
+Steps: 150it [04:15,  1.71s/it][AEpoch:  16%|█▌        | 8/50 [04:15<20:13, 28.90s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 55.18it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 55.56it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 57.74it/s]
+Epoch:  18%|█▊        | 9/50 [04:16<19:25, 28.43s/it]11/10/2020 01:55:54 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-159
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 79.68it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 79.99it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 82.89it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 83.05it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 54794.95it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.89it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.94it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.44it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.52it/s]
+
+                               [A                                                     
+Steps: 150it [04:46,  1.91s/it][AEpoch:  18%|█▊        | 9/50 [04:46<19:25, 28.43s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 57.06it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 57.41it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 59.09it/s]
+Epoch:  20%|██        | 10/50 [04:46<19:18, 28.97s/it]11/10/2020 01:56:24 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-160
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 81.12it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 81.03it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 83.26it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 83.29it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 58698.91it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.92it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.97it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.46it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.54it/s]
+
+                               [A                                                      
+Steps: 150it [05:20,  2.14s/it][AEpoch:  20%|██        | 10/50 [05:20<19:18, 28.97s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 54.93it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 55.74it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 58.44it/s]
+Epoch:  22%|██▏       | 11/50 [05:20<19:52, 30.57s/it]11/10/2020 01:56:59 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-161
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 79.98it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 80.12it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 82.63it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 82.79it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 53276.38it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.91it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.95it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.45it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.52it/s]
+
+                               [A                                                      
+Steps: 150it [05:55,  2.37s/it][AEpoch:  22%|██▏       | 11/50 [05:55<19:52, 30.57s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 56.23it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 56.96it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 59.30it/s]
+Epoch:  24%|██▍       | 12/50 [05:56<20:15, 31.99s/it]11/10/2020 01:57:34 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-162
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 78.19it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 80.85it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 88.68it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 88.53it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 73350.31it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  7.07it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  7.06it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.55it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.59it/s]
+
+                               [A                                                      
+Steps: 150it [06:26,  2.58s/it][AEpoch:  24%|██▍       | 12/50 [06:26<20:15, 31.99s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 56.58it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 56.79it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 58.93it/s]
+Epoch:  26%|██▌       | 13/50 [06:27<19:34, 31.74s/it]11/10/2020 01:58:05 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-163
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 83.81it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 83.84it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 86.76it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 86.85it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 62263.62it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.91it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.96it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.45it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.53it/s]
+
+                               [A                                                      
+Steps: 150it [07:02,  2.82s/it][AEpoch:  26%|██▌       | 13/50 [07:02<19:34, 31.74s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 57.21it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 57.58it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 59.78it/s]
+Epoch:  28%|██▊       | 14/50 [07:03<19:49, 33.04s/it]11/10/2020 01:58:41 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-164
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 81.29it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 81.14it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 83.02it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 83.15it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 90465.38it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.87it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.93it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.44it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.52it/s]
+
+                               [A                                                      
+Steps: 150it [07:31,  3.01s/it][AEpoch:  28%|██▊       | 14/50 [07:31<19:49, 33.04s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 57.31it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 57.80it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 59.91it/s]
+Epoch:  30%|███       | 15/50 [07:32<18:34, 31.85s/it]11/10/2020 01:59:10 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-165
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  91%|█████████ | 10/11 [00:00<00:00, 91.29it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 91.13it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  91%|█████████ | 10/11 [00:00<00:00, 92.43it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 92.14it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 62096.02it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  7.06it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  7.06it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.54it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.59it/s]
+
+                               [A                                                      
+Steps: 150it [08:02,  3.22s/it][AEpoch:  30%|███       | 15/50 [08:02<18:34, 31.85s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 54.16it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 55.31it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 58.27it/s]
+Epoch:  32%|███▏      | 16/50 [08:02<17:48, 31.44s/it]11/10/2020 01:59:41 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-166
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 80.18it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 80.13it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 82.07it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 82.40it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 84192.23it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.83it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.90it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.42it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.52it/s]
+
+                               [A                                                      
+Steps: 150it [08:32,  3.41s/it][AEpoch:  32%|███▏      | 16/50 [08:32<17:48, 31.44s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 51.94it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 53.63it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 57.08it/s]
+Epoch:  34%|███▍      | 17/50 [08:32<16:59, 30.89s/it]11/10/2020 02:00:10 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-167
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 83.44it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 83.39it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 85.72it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 85.92it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 94737.87it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.88it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.93it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.42it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.50it/s]
+
+                               [A                                                      
+Steps: 150it [09:07,  3.65s/it][AEpoch:  34%|███▍      | 17/50 [09:07<16:59, 30.89s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  31%|███▏      | 5/16 [00:00<00:00, 50.00it/s][A[A
+
+retrival evaluation:  69%|██████▉   | 11/16 [00:00<00:00, 50.19it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 52.18it/s]
+Epoch:  36%|███▌      | 18/50 [09:08<17:13, 32.29s/it]11/10/2020 02:00:46 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-168
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 87.94it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 88.11it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  91%|█████████ | 10/11 [00:00<00:00, 90.07it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 90.19it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 59455.34it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  7.03it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  7.01it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.49it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.53it/s]
+
+                               [A                                                      
+Steps: 150it [09:34,  3.83s/it][AEpoch:  36%|███▌      | 18/50 [09:34<17:13, 32.29s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  31%|███▏      | 5/16 [00:00<00:00, 46.70it/s][A[A
+
+retrival evaluation:  69%|██████▉   | 11/16 [00:00<00:00, 49.68it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 55.19it/s]
+Epoch:  38%|███▊      | 19/50 [09:35<15:57, 30.89s/it]11/10/2020 02:01:14 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-169
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 78.72it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 79.50it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 83.90it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 83.96it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 61846.31it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.96it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  7.00it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.48it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.55it/s]
+
+                               [A                                                      
+Steps: 150it [10:00,  4.00s/it][AEpoch:  38%|███▊      | 19/50 [10:00<15:57, 30.89s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 56.13it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 56.04it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 58.13it/s]
+Epoch:  40%|████      | 20/50 [10:00<14:36, 29.21s/it]11/10/2020 02:01:39 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-170
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 87.60it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 87.63it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 88.93it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 88.81it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 61109.06it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  7.08it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  7.06it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.52it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.57it/s]
+
+                               [A                                                      
+Steps: 150it [10:27,  4.18s/it][AEpoch:  40%|████      | 20/50 [10:27<14:36, 29.21s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  38%|███▊      | 6/16 [00:00<00:00, 56.51it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 12/16 [00:00<00:00, 56.69it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 58.47it/s]
+Epoch:  42%|████▏     | 21/50 [10:27<13:47, 28.55s/it]11/10/2020 02:02:06 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-171
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 72.96it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 74.05it/s]
+
+
+update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
+
+update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 81.48it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 81.57it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 59840.91it/s]
+
+
+Classify Evaluating:   0%|          | 0/3 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  33%|███▎      | 1/3 [00:00<00:00,  6.95it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 2/3 [00:00<00:00,  6.98it/s][A[A
+
+Classify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.46it/s][A[AClassify Evaluating: 100%|██████████| 3/3 [00:00<00:00,  7.53it/s]
+
+                               [A                                                      
+Steps: 150it [11:02,  4.42s/it][AEpoch:  42%|████▏     | 21/50 [11:02<13:47, 28.55s/it]
+
+retrival evaluation:   0%|          | 0/16 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  31%|███▏      | 5/16 [00:00<00:00, 49.06it/s][A[A
+
+retrival evaluation:  62%|██████▎   | 10/16 [00:00<00:00, 49.24it/s][A[A
+
+retrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 50.83it/s][A[Aretrival evaluation: 100%|██████████| 16/16 [00:00<00:00, 51.27it/s]
+Epoch:  44%|████▍     | 22/50 [11:02<14:11, 30.42s/it]11/10/2020 02:02:41 - INFO - EMSE.utils -   Saving checkpoint to ./output/dev_exp_09-24_13-45-03/epoch-ckp-172

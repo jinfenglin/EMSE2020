@@ -1,0 +1,16 @@
+#!/bin/csh
+
+qsub Ar.crc
+qsub Bk.crc
+qsub Ca.crc
+qsub Dr.crc
+qsub Em.crc
+qsub Na.crc
+qsub Nc.crc
+qsub Pe.crc
+qsub QMA.crc
+qsub QMI.crc
+qsub Ra.crc
+qsub Sa.crc
+qsub We.crc
+qsub xL.crc

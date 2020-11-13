@@ -40,9 +40,9 @@ class metrics:
                     tn += 1
             else:
                 if l == 1:
-                    fp += 1
-                else:
                     fn += 1
+                else:
+                    fp += 1
         return {"tp": tp, "fp": fp, "tn": tn, "fn": fn}
 
     def precision_recall_curve(self, fig_name):

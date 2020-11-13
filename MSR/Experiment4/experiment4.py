@@ -56,11 +56,11 @@ class Experiment4:
 
     def run(self):
         reader = Exp4DataReader(os.path.join(self.data_dir, self.repo_path))
-
         dataset = reader.readData(use_translated_data=self.use_translated_data)
+        all_docs = dataset.get_docs()
         dataset, dataset_info = limit_artifacts_in_links(dataset)
         print(dataset_info)
-        model = self.get_model(self.model_type, self.lang_code, dataset.get_docs())
+        model = self.get_model(self.model_type, self.lang_code, all_docs) # index on all docs but test on testset
         results = self.run_model(model, dataset)
         for link_set_id in dataset.gold_link_sets:
             print("Processing link set {}".format(link_set_id))

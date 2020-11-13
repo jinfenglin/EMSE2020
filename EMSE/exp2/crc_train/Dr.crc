@@ -1,0 +1,26 @@
+#!/bin/csh
+#$ -l gpu_card=1
+#$ -q gpu
+#$ -N dr     #train and evaluate on bk-cmdb dataset
+
+module load python/3.7.3
+module load pytorch/1.7.0
+
+set root = "/afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp2"
+cd $root
+
+python train.py \
+    --data_dir ~/data/EMSE/druid \
+    --output_dir ./output \
+    --per_gpu_train_batch_size 4 \
+    --per_gpu_eval_batch_size 4 \
+    --logging_steps 10 \
+    --learning_rate 1e-5 \
+    --save_epoch 100 \
+    --gradient_accumulation_steps 8 \
+    --num_train_epochs 2000 \
+    --valid_num 200 \
+    --valid_epoch 100 \
+    --neg_sampling online \
+    --exp_name dr \
+    --overwrite

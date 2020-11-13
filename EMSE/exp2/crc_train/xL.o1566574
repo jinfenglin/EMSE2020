@@ -1,0 +1,1952 @@
+Loading python/3.7.3
+  Loading requirement: tcl/8.6.8 gcc/8.3.0
+ERROR: Unable to locate a modulefile for 'pytorch/1.7.0'
+11/13/2020 01:24:58 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 1, distributed training: False, 16-bits training: False
+11/13/2020 01:24:58 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+11/13/2020 01:24:58 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+11/13/2020 01:24:59 - INFO - transformers.tokenization_utils_base -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-cased-vocab.txt from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/96435fa287fbf7e469185f1062386e05a075cadbf6838b74da22bf64b080bc32.99bcd55fc66f4f3360bc49ba472b940b8dcf223ea6a345deb969d607ca900729
+11/13/2020 01:24:59 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+11/13/2020 01:24:59 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+11/13/2020 01:24:59 - INFO - transformers.modeling_utils -   loading weights file https://cdn.huggingface.co/distilbert-base-multilingual-cased-pytorch_model.bin from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/72a6c787412704a6fa6f5d9e5ef7d33c5b80c787e2bbc7d9ad82d7f88fb8f802.89fad86febf14521569023d312560283a922c0884a52f412eef4e96f91513ab2
+11/13/2020 01:25:03 - INFO - transformers.modeling_utils -   All model checkpoint weights were used when initializing DistilBertModel.
+
+11/13/2020 01:25:03 - INFO - transformers.modeling_utils -   All the weights of DistilBertModel were initialized from the model checkpoint at distilbert-base-multilingual-cased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use DistilBertModel for predictions without further training.
+11/13/2020 01:25:03 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+11/13/2020 01:25:03 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+11/13/2020 01:25:03 - INFO - transformers.tokenization_utils_base -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-cased-vocab.txt from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/96435fa287fbf7e469185f1062386e05a075cadbf6838b74da22bf64b080bc32.99bcd55fc66f4f3360bc49ba472b940b8dcf223ea6a345deb969d607ca900729
+11/13/2020 01:25:04 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
+11/13/2020 01:25:04 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForMaskedLM"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "output_past": true,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "vocab_size": 119547
+}
+
+11/13/2020 01:25:04 - INFO - transformers.modeling_utils -   loading weights file https://cdn.huggingface.co/distilbert-base-multilingual-cased-pytorch_model.bin from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/72a6c787412704a6fa6f5d9e5ef7d33c5b80c787e2bbc7d9ad82d7f88fb8f802.89fad86febf14521569023d312560283a922c0884a52f412eef4e96f91513ab2
+11/13/2020 01:25:08 - INFO - transformers.modeling_utils -   All model checkpoint weights were used when initializing DistilBertModel.
+
+11/13/2020 01:25:08 - INFO - transformers.modeling_utils -   All the weights of DistilBertModel were initialized from the model checkpoint at distilbert-base-multilingual-cased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use DistilBertModel for predictions without further training.
+11/13/2020 01:25:11 - INFO - __main__ -   Training/evaluation parameters Namespace(adam_epsilon=1e-08, data_dir='/afs/crc.nd.edu/user/j/jlin6/data/EMSE/xLua', device=device(type='cuda'), exp_name='xLua', fp16=False, fp16_opt_level='O1', gradient_accumulation_steps=8, hard_ratio=0.5, learning_rate=1e-05, local_rank=-1, logging_steps=10, max_grad_norm=1.0, max_steps=-1, model_path=None, n_gpu=1, neg_sampling='online', no_cuda=False, num_train_epochs=100.0, output_dir='./output', overwrite=True, per_gpu_eval_batch_size=4, per_gpu_train_batch_size=4, save_epoch=15, save_steps=-1, seed=42, tbert_type='siamese', train_num=None, valid_epoch=3, valid_num=200, valid_step=-1, warmup_steps=0, weight_decay=0.0)
+11/13/2020 01:25:11 - INFO - EMSE.BERTDataReader -   Creating examples from dataset file at /afs/crc.nd.edu/user/j/jlin6/data/EMSE/xLua/train
+update feature:   0%|          | 0/17 [00:00<?, ?it/s]update feature: 100%|██████████| 17/17 [00:00<00:00, 240.34it/s]
+update feature:   0%|          | 0/17 [00:00<?, ?it/s]update feature: 100%|██████████| 17/17 [00:00<00:00, 1722.59it/s]
+11/13/2020 01:25:11 - INFO - EMSE.BERTDataReader -   Creating examples from dataset file at /afs/crc.nd.edu/user/j/jlin6/data/EMSE/xLua/valid
+update feature:   0%|          | 0/17 [00:00<?, ?it/s]update feature: 100%|██████████| 17/17 [00:00<00:00, 407.24it/s]
+update feature:   0%|          | 0/17 [00:00<?, ?it/s]update feature: 100%|██████████| 17/17 [00:00<00:00, 1221.05it/s]
+11/13/2020 01:25:11 - INFO - __main__ -   ***** Running training *****
+11/13/2020 01:25:11 - INFO - __main__ -     Num examples = 34
+11/13/2020 01:25:11 - INFO - __main__ -     Num Epochs = 100
+11/13/2020 01:25:11 - INFO - __main__ -     Instantaneous batch size per GPU = 4
+11/13/2020 01:25:11 - INFO - __main__ -     Total train batch size (w. parallel, distributed & accumulation) = 32
+11/13/2020 01:25:11 - INFO - __main__ -     Gradient Accumulation steps = 8
+11/13/2020 01:25:11 - INFO - __main__ -     Total optimization steps = 100
+11/13/2020 01:25:11 - INFO - __main__ -   Start a new training
+Epoch:   0%|          | 0/100 [00:00<?, ?it/s]
+Steps:   0%|          | 0/100.0 [00:00<?, ?it/s][A
+Steps:   1%|          | 1/100.0 [00:02<03:50,  2.33s/it][A11/13/2020 01:25:14 - INFO - EMSE.utils -   Saving checkpoint to ./output/xLua/epoch-ckp-0
+/afs/crc.nd.edu/user/j/jlin6/.local/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:216: UserWarning: Please also save or load the state of the optimizer when saving or loading the scheduler.
+  warnings.warn(SAVE_STATE_WARNING, UserWarning)
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.00it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 80.54it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 83.40it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 85.06it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 69428.60it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.69it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.69it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.69it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.69it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.24it/s]
+                                              
+                                                        [AEpoch:   0%|          | 0/100 [00:26<?, ?it/s]
+Steps:   1%|          | 1/100.0 [00:26<03:50,  2.33s/it][A
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 76.76it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 76.25it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 76.64it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 76.19it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 76.32it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 76.54it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.61it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.09it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.96it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.84it/s]
+Epoch:   1%|          | 1/100 [00:27<44:59, 27.27s/it]
+Steps:   2%|▏         | 2/100.0 [00:29<15:59,  9.80s/it][AEpoch:   2%|▏         | 2/100 [00:29<32:20, 19.80s/it]
+Steps:   3%|▎         | 3/100.0 [00:31<12:14,  7.57s/it][AEpoch:   3%|▎         | 3/100 [00:32<23:33, 14.57s/it]
+Steps:   4%|▍         | 4/100.0 [00:34<09:37,  6.01s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  47%|████▋     | 8/17 [00:00<00:00, 76.75it/s][A[A
+
+update embedding: 100%|██████████| 17/17 [00:00<00:00, 79.74it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 82.04it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 88.25it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 87.86it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 94441.28it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.74it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.70it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.67it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.67it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.20it/s]
+
+                                                        [A                                                      
+Steps:   4%|▍         | 4/100.0 [00:35<09:37,  6.01s/it][AEpoch:   3%|▎         | 3/100 [00:35<23:33, 14.57s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 71.72it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 72.76it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.40it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 74.28it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 74.94it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.57it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 75.45it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.15it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.41it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.18it/s]
+Epoch:   4%|▍         | 4/100 [00:36<18:30, 11.57s/it]
+Steps:   5%|▌         | 5/100.0 [00:38<08:50,  5.58s/it][AEpoch:   5%|▌         | 5/100 [00:38<13:57,  8.81s/it]
+Steps:   6%|▌         | 6/100.0 [00:41<07:14,  4.62s/it][AEpoch:   6%|▌         | 6/100 [00:41<10:46,  6.88s/it]
+Steps:   7%|▋         | 7/100.0 [00:43<06:07,  3.95s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 80.81it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 83.58it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 87.48it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 87.53it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 96486.02it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.58it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.58it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.58it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.58it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.13it/s]
+
+                                                        [A                                                      
+Steps:   7%|▋         | 7/100.0 [00:44<06:07,  3.95s/it][AEpoch:   6%|▌         | 6/100 [00:44<10:46,  6.88s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 73.81it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 74.12it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.71it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 75.49it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.44it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 76.22it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 75.51it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.28it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.48it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.39it/s]
+Epoch:   7%|▋         | 7/100 [00:45<09:35,  6.19s/it]
+Steps:   8%|▊         | 8/100.0 [00:48<06:20,  4.14s/it][AEpoch:   8%|▊         | 8/100 [00:48<07:44,  5.05s/it]
+Steps:   9%|▉         | 9/100.0 [00:50<05:28,  3.61s/it][AEpoch:   9%|▉         | 9/100 [00:50<06:26,  4.25s/it]
+Steps:  10%|█         | 10/100.0 [00:52<04:51,  3.24s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.40it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 83.86it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 87.59it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 87.45it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 97011.11it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.52it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.54it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.53it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.07it/s]
+
+                                                         [A                                                      
+Steps:  10%|█         | 10/100.0 [00:54<04:51,  3.24s/it][AEpoch:   9%|▉         | 9/100 [00:54<06:26,  4.25s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 72.21it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.42it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.13it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 75.29it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.30it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.75it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 75.76it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 75.97it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 74.77it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 75.68it/s]
+Epoch:  10%|█         | 10/100 [00:55<06:31,  4.35s/it]
+Steps:  11%|█         | 11/100.0 [00:57<05:24,  3.65s/it][AEpoch:  11%|█         | 11/100 [00:57<05:34,  3.76s/it]
+Steps:  12%|█▏        | 12/100.0 [00:59<04:47,  3.27s/it][AEpoch:  12%|█▏        | 12/100 [01:00<04:54,  3.35s/it]
+Steps:  13%|█▎        | 13/100.0 [01:02<04:21,  3.01s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 82.91it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 86.39it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 90.70it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.12it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 106581.72it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.59it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.57it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.54it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.07it/s]
+
+                                                         [A                                                       
+Steps:  13%|█▎        | 13/100.0 [01:03<04:21,  3.01s/it][AEpoch:  12%|█▏        | 12/100 [01:03<04:54,  3.35s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 74.12it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.55it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.73it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 74.06it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 74.88it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.16it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.13it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.41it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.79it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.10it/s]
+Epoch:  13%|█▎        | 13/100 [01:04<05:23,  3.72s/it]
+Steps:  14%|█▍        | 14/100.0 [01:06<04:59,  3.48s/it][AEpoch:  14%|█▍        | 14/100 [01:07<04:45,  3.32s/it]
+Steps:  15%|█▌        | 15/100.0 [01:09<04:28,  3.16s/it][AEpoch:  15%|█▌        | 15/100 [01:09<04:18,  3.05s/it]
+Steps:  16%|█▌        | 16/100.0 [01:11<04:06,  2.93s/it][A11/13/2020 01:26:23 - INFO - EMSE.utils -   Saving checkpoint to ./output/xLua/epoch-ckp-15
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.52it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 81.02it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 83.38it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 83.86it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 88465.47it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.62it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.60it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.59it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.60it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.15it/s]
+
+                                                         [A                                                       
+Steps:  16%|█▌        | 16/100.0 [01:38<04:06,  2.93s/it][AEpoch:  15%|█▌        | 15/100 [01:38<04:18,  3.05s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 76.09it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 75.76it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 76.33it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 75.59it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 76.09it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 76.41it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.85it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.94it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.86it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.87it/s]
+Epoch:  16%|█▌        | 16/100 [01:40<15:51, 11.33s/it]
+Steps:  17%|█▋        | 17/100.0 [01:42<15:32, 11.24s/it][AEpoch:  17%|█▋        | 17/100 [01:42<11:57,  8.64s/it]
+Steps:  18%|█▊        | 18/100.0 [01:44<11:43,  8.58s/it][AEpoch:  18%|█▊        | 18/100 [01:44<09:14,  6.76s/it]
+Steps:  19%|█▉        | 19/100.0 [01:47<09:04,  6.72s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.25it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 85.56it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 90.93it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.72it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 106264.04it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.56it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.56it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.56it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.55it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.09it/s]
+
+                                                         [A                                                       
+Steps:  19%|█▉        | 19/100.0 [01:48<09:04,  6.72s/it][AEpoch:  18%|█▊        | 18/100 [01:48<09:14,  6.76s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 73.92it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 74.03it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.07it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 75.17it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.76it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.85it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.42it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.13it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.62it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.37it/s]
+Epoch:  19%|█▉        | 19/100 [01:49<08:14,  6.10s/it]
+Steps:  20%|██        | 20/100.0 [01:51<08:06,  6.08s/it][AEpoch:  20%|██        | 20/100 [01:51<06:39,  4.99s/it]
+Steps:  21%|██        | 21/100.0 [01:54<06:32,  4.97s/it][AEpoch:  21%|██        | 21/100 [01:54<05:32,  4.21s/it]
+Steps:  22%|██▏       | 22/100.0 [01:56<05:27,  4.20s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 90.94it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.92it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.29it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.99it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 110205.82it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.55it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.54it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.54it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.53it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.09it/s]
+
+                                                         [A                                                       
+Steps:  22%|██▏       | 22/100.0 [01:57<05:27,  4.20s/it][AEpoch:  21%|██        | 21/100 [01:57<05:32,  4.21s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 77.10it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 76.72it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 76.91it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 77.14it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 77.18it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 76.92it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.20it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 75.77it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.42it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.87it/s]
+Epoch:  22%|██▏       | 22/100 [01:58<05:36,  4.31s/it]
+Steps:  23%|██▎       | 23/100.0 [02:01<05:31,  4.30s/it][AEpoch:  23%|██▎       | 23/100 [02:01<04:47,  3.73s/it]
+Steps:  24%|██▍       | 24/100.0 [02:03<04:43,  3.73s/it][AEpoch:  24%|██▍       | 24/100 [02:03<04:13,  3.33s/it]
+Steps:  25%|██▌       | 25/100.0 [02:05<04:09,  3.33s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.95it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 85.62it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.27it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 91.01it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 84382.45it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.57it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.54it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.54it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.54it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.08it/s]
+
+                                                         [A                                                       
+Steps:  25%|██▌       | 25/100.0 [02:06<04:09,  3.33s/it][AEpoch:  24%|██▍       | 24/100 [02:06<04:13,  3.33s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 74.66it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 75.14it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.52it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 75.33it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.43it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.70it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 75.67it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.27it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.01it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.10it/s]
+Epoch:  25%|██▌       | 25/100 [02:08<04:37,  3.70s/it]
+Steps:  26%|██▌       | 26/100.0 [02:10<04:33,  3.70s/it][AEpoch:  26%|██▌       | 26/100 [02:10<04:04,  3.31s/it]
+Steps:  27%|██▋       | 27/100.0 [02:12<04:01,  3.31s/it][AEpoch:  27%|██▋       | 27/100 [02:12<03:41,  3.04s/it]
+Steps:  28%|██▊       | 28/100.0 [02:15<03:38,  3.04s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  47%|████▋     | 8/17 [00:00<00:00, 78.04it/s][A[A
+
+update embedding: 100%|██████████| 17/17 [00:00<00:00, 80.68it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 82.72it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 88.21it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 87.96it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 98757.85it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.47it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.47it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.47it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.01it/s]
+
+                                                         [A                                                       
+Steps:  28%|██▊       | 28/100.0 [02:16<03:38,  3.04s/it][AEpoch:  27%|██▋       | 27/100 [02:16<03:41,  3.04s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 71.76it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.38it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.34it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 74.83it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.76it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.66it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.42it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 77.12it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.41it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.23it/s]
+Epoch:  28%|██▊       | 28/100 [02:17<04:12,  3.50s/it]
+Steps:  29%|██▉       | 29/100.0 [02:19<04:08,  3.50s/it][AEpoch:  29%|██▉       | 29/100 [02:19<03:45,  3.17s/it]
+Steps:  30%|███       | 30/100.0 [02:22<03:42,  3.17s/it][AEpoch:  30%|███       | 30/100 [02:22<03:30,  3.00s/it]
+Steps:  31%|███       | 31/100.0 [02:24<03:27,  3.00s/it][A11/13/2020 01:27:36 - INFO - EMSE.utils -   Saving checkpoint to ./output/xLua/epoch-ckp-30
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 82.92it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 83.48it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 87.10it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 87.57it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 108528.41it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.61it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.60it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.60it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.59it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.14it/s]
+
+                                                         [A                                                       
+Steps:  31%|███       | 31/100.0 [02:52<03:27,  3.00s/it][AEpoch:  30%|███       | 30/100 [02:52<03:30,  3.00s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 74.11it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 75.11it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 75.56it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 76.55it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 76.26it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.10it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.00it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.32it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.46it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.68it/s]
+Epoch:  31%|███       | 31/100 [02:53<13:11, 11.48s/it]
+Steps:  32%|███▏      | 32/100.0 [02:56<13:00, 11.47s/it][AEpoch:  32%|███▏      | 32/100 [02:56<09:54,  8.75s/it]
+Steps:  33%|███▎      | 33/100.0 [02:58<09:46,  8.75s/it][AEpoch:  33%|███▎      | 33/100 [02:58<07:38,  6.84s/it]
+Steps:  34%|███▍      | 34/100.0 [03:00<07:31,  6.84s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  47%|████▋     | 8/17 [00:00<00:00, 79.66it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 85.35it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.17it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.95it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 97943.91it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.54it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.54it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.08it/s]
+
+                                                         [A                                                       
+Steps:  34%|███▍      | 34/100.0 [03:01<07:31,  6.84s/it][AEpoch:  33%|███▎      | 33/100 [03:01<07:38,  6.84s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  10%|▉         | 7/73 [00:00<00:00, 68.57it/s][A[A
+
+retrival evaluation:  21%|██        | 15/73 [00:00<00:00, 69.15it/s][A[A
+
+retrival evaluation:  32%|███▏      | 23/73 [00:00<00:00, 71.61it/s][A[A
+
+retrival evaluation:  42%|████▏     | 31/73 [00:00<00:00, 73.27it/s][A[A
+
+retrival evaluation:  53%|█████▎    | 39/73 [00:00<00:00, 74.00it/s][A[A
+
+retrival evaluation:  64%|██████▍   | 47/73 [00:00<00:00, 73.02it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 55/73 [00:00<00:00, 73.74it/s][A[A
+
+retrival evaluation:  86%|████████▋ | 63/73 [00:00<00:00, 73.92it/s][A[A
+
+retrival evaluation:  97%|█████████▋| 71/73 [00:00<00:00, 74.63it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 74.53it/s]
+Epoch:  34%|███▍      | 34/100 [03:03<06:47,  6.17s/it]
+Steps:  35%|███▌      | 35/100.0 [03:05<06:40,  6.16s/it][AEpoch:  35%|███▌      | 35/100 [03:05<05:26,  5.03s/it]
+Steps:  36%|███▌      | 36/100.0 [03:07<05:21,  5.03s/it][AEpoch:  36%|███▌      | 36/100 [03:07<04:31,  4.24s/it]
+Steps:  37%|███▋      | 37/100.0 [03:10<04:27,  4.24s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.40it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 84.43it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 87.73it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 87.37it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 105322.26it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.51it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.50it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.53it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.07it/s]
+
+                                                         [A                                                       
+Steps:  37%|███▋      | 37/100.0 [03:11<04:27,  4.24s/it][AEpoch:  36%|███▌      | 36/100 [03:11<04:31,  4.24s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 74.20it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 74.95it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.53it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 74.83it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 74.82it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.57it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.26it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.67it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.82it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.35it/s]
+Epoch:  37%|███▋      | 37/100 [03:12<04:33,  4.34s/it]
+Steps:  38%|███▊      | 38/100.0 [03:14<04:29,  4.34s/it][AEpoch:  38%|███▊      | 38/100 [03:14<03:52,  3.75s/it]
+Steps:  39%|███▉      | 39/100.0 [03:17<03:49,  3.76s/it][AEpoch:  39%|███▉      | 39/100 [03:17<03:24,  3.35s/it]
+Steps:  40%|████      | 40/100.0 [03:19<03:20,  3.35s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.93it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 85.39it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 90.90it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.16it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 105634.32it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.57it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.54it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.52it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.51it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.05it/s]
+
+                                                         [A                                                       
+Steps:  40%|████      | 40/100.0 [03:20<03:20,  3.35s/it][AEpoch:  39%|███▉      | 39/100 [03:20<03:24,  3.35s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 71.43it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.14it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.09it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 74.89it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.44it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.01it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 75.60it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 75.58it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.44it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 75.90it/s]
+Epoch:  40%|████      | 40/100 [03:21<03:42,  3.71s/it]
+Steps:  41%|████      | 41/100.0 [03:24<03:39,  3.71s/it][AEpoch:  41%|████      | 41/100 [03:24<03:15,  3.31s/it]
+Steps:  42%|████▏     | 42/100.0 [03:26<03:12,  3.32s/it][AEpoch:  42%|████▏     | 42/100 [03:26<02:56,  3.04s/it]
+Steps:  43%|████▎     | 43/100.0 [03:28<02:53,  3.04s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.61it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 85.75it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 90.98it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 91.08it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 120444.54it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.56it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.53it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.07it/s]
+
+                                                         [A                                                       
+Steps:  43%|████▎     | 43/100.0 [03:30<02:53,  3.04s/it][AEpoch:  42%|████▏     | 42/100 [03:30<02:56,  3.04s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 75.45it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 75.20it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 76.25it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 76.43it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 76.26it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.62it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 74.64it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 75.78it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.53it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.04it/s]
+Epoch:  43%|████▎     | 43/100 [03:31<03:19,  3.50s/it]
+Steps:  44%|████▍     | 44/100.0 [03:33<03:16,  3.50s/it][AEpoch:  44%|████▍     | 44/100 [03:33<02:57,  3.17s/it]
+Steps:  45%|████▌     | 45/100.0 [03:35<02:54,  3.17s/it][AEpoch:  45%|████▌     | 45/100 [03:35<02:41,  2.94s/it]
+Steps:  46%|████▌     | 46/100.0 [03:38<02:38,  2.94s/it][A11/13/2020 01:28:50 - INFO - EMSE.utils -   Saving checkpoint to ./output/xLua/epoch-ckp-45
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 83.81it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 84.87it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 88.06it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 89.15it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 88465.47it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.58it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.55it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.57it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.56it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.10it/s]
+
+                                                         [A                                                       
+Steps:  46%|████▌     | 46/100.0 [04:01<02:38,  2.94s/it][AEpoch:  45%|████▌     | 45/100 [04:01<02:41,  2.94s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 74.56it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 75.15it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.71it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 75.28it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.55it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.35it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.08it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 75.46it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.78it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 75.98it/s]
+Epoch:  46%|████▌     | 46/100 [04:02<09:07, 10.14s/it]
+Steps:  47%|████▋     | 47/100.0 [04:05<08:57, 10.14s/it][AEpoch:  47%|████▋     | 47/100 [04:05<06:54,  7.81s/it]
+Steps:  48%|████▊     | 48/100.0 [04:07<06:46,  7.81s/it][AEpoch:  48%|████▊     | 48/100 [04:07<05:21,  6.19s/it]
+Steps:  49%|████▉     | 49/100.0 [04:09<05:15,  6.19s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 83.41it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 86.84it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 90.55it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.60it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 89352.34it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.61it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.59it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.58it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.57it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.10it/s]
+
+                                                         [A                                                       
+Steps:  49%|████▉     | 49/100.0 [04:11<05:15,  6.19s/it][AEpoch:  48%|████▊     | 48/100 [04:11<05:21,  6.19s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 73.87it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 74.04it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.54it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 75.20it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.19it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 76.07it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.77it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.90it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.44it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.44it/s]
+Epoch:  49%|████▉     | 49/100 [04:12<04:50,  5.70s/it]
+Steps:  50%|█████     | 50/100.0 [04:14<04:45,  5.70s/it][AEpoch:  50%|█████     | 50/100 [04:14<03:55,  4.71s/it]
+Steps:  51%|█████     | 51/100.0 [04:16<03:50,  4.71s/it][AEpoch:  51%|█████     | 51/100 [04:17<03:16,  4.01s/it]
+Steps:  52%|█████▏    | 52/100.0 [04:19<03:12,  4.01s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 89.15it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 88.89it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 88.12it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 87.68it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 98621.26it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.50it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.50it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.50it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.05it/s]
+
+                                                         [A                                                       
+Steps:  52%|█████▏    | 52/100.0 [04:20<03:12,  4.01s/it][AEpoch:  51%|█████     | 51/100 [04:20<03:16,  4.01s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 71.66it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.23it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.00it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 74.76it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.10it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.30it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 74.69it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 74.78it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.81it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 75.73it/s]
+Epoch:  52%|█████▏    | 52/100 [04:21<03:20,  4.18s/it]
+Steps:  53%|█████▎    | 53/100.0 [04:23<03:16,  4.18s/it][AEpoch:  53%|█████▎    | 53/100 [04:23<02:51,  3.64s/it]
+Steps:  54%|█████▍    | 54/100.0 [04:26<02:47,  3.65s/it][AEpoch:  54%|█████▍    | 54/100 [04:26<02:30,  3.27s/it]
+Steps:  55%|█████▌    | 55/100.0 [04:28<02:27,  3.27s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.13it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 84.67it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 90.95it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.70it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 109193.21it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.52it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.52it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.51it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.04it/s]
+
+                                                         [A                                                       
+Steps:  55%|█████▌    | 55/100.0 [04:29<02:27,  3.27s/it][AEpoch:  54%|█████▍    | 54/100 [04:29<02:30,  3.27s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  10%|▉         | 7/73 [00:00<00:00, 69.96it/s][A[A
+
+retrival evaluation:  21%|██        | 15/73 [00:00<00:00, 71.95it/s][A[A
+
+retrival evaluation:  32%|███▏      | 23/73 [00:00<00:00, 72.30it/s][A[A
+
+retrival evaluation:  42%|████▏     | 31/73 [00:00<00:00, 72.75it/s][A[A
+
+retrival evaluation:  53%|█████▎    | 39/73 [00:00<00:00, 73.70it/s][A[A
+
+retrival evaluation:  64%|██████▍   | 47/73 [00:00<00:00, 74.65it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 55/73 [00:00<00:00, 75.08it/s][A[A
+
+retrival evaluation:  86%|████████▋ | 63/73 [00:00<00:00, 75.45it/s][A[A
+
+retrival evaluation:  97%|█████████▋| 71/73 [00:00<00:00, 75.70it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 75.42it/s]
+Epoch:  55%|█████▌    | 55/100 [04:30<02:44,  3.67s/it]
+Steps:  56%|█████▌    | 56/100.0 [04:33<02:41,  3.67s/it][AEpoch:  56%|█████▌    | 56/100 [04:33<02:24,  3.28s/it]
+Steps:  57%|█████▋    | 57/100.0 [04:35<02:21,  3.29s/it][AEpoch:  57%|█████▋    | 57/100 [04:35<02:09,  3.02s/it]
+Steps:  58%|█████▊    | 58/100.0 [04:38<02:06,  3.02s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.81it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 85.59it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.02it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.99it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 97143.28it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.48it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.46it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.00it/s]
+
+                                                         [A                                                       
+Steps:  58%|█████▊    | 58/100.0 [04:39<02:06,  3.02s/it][AEpoch:  57%|█████▋    | 57/100 [04:39<02:09,  3.02s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 75.45it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 75.84it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 76.04it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 76.35it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 76.21it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 76.49it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 76.18it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 76.63it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 76.24it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.68it/s]
+Epoch:  58%|█████▊    | 58/100 [04:40<02:26,  3.49s/it]
+Steps:  59%|█████▉    | 59/100.0 [04:42<02:23,  3.49s/it][AEpoch:  59%|█████▉    | 59/100 [04:42<02:09,  3.16s/it]
+Steps:  60%|██████    | 60/100.0 [04:45<02:06,  3.16s/it][AEpoch:  60%|██████    | 60/100 [04:45<01:57,  2.93s/it]
+Steps:  61%|██████    | 61/100.0 [04:47<01:54,  2.93s/it][A11/13/2020 01:29:59 - INFO - EMSE.utils -   Saving checkpoint to ./output/xLua/epoch-ckp-60
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  47%|████▋     | 8/17 [00:00<00:00, 77.73it/s][A[A
+
+update embedding: 100%|██████████| 17/17 [00:00<00:00, 79.79it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 81.33it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 87.07it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 88.14it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 111064.12it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.64it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.62it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.60it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.59it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.12it/s]
+
+                                                         [A                                                       
+Steps:  61%|██████    | 61/100.0 [05:12<01:54,  2.93s/it][AEpoch:  60%|██████    | 60/100 [05:12<01:57,  2.93s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 73.52it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.99it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.17it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 75.18it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.25it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.08it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 75.74it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 75.43it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.53it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 75.75it/s]
+Epoch:  61%|██████    | 61/100 [05:13<06:55, 10.66s/it]
+Steps:  62%|██████▏   | 62/100.0 [05:16<06:44, 10.65s/it][AEpoch:  62%|██████▏   | 62/100 [05:16<05:10,  8.17s/it]
+Steps:  63%|██████▎   | 63/100.0 [05:18<05:02,  8.17s/it][AEpoch:  63%|██████▎   | 63/100 [05:18<03:58,  6.44s/it]
+Steps:  64%|██████▍   | 64/100.0 [05:20<03:51,  6.44s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  47%|████▋     | 8/17 [00:00<00:00, 79.71it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 85.40it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 90.72it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.59it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 109697.18it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.54it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.54it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.09it/s]
+
+                                                         [A                                                       
+Steps:  64%|██████▍   | 64/100.0 [05:22<03:51,  6.44s/it][AEpoch:  63%|██████▎   | 63/100 [05:22<03:58,  6.44s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 75.91it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 75.78it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 75.46it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 75.40it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 76.18it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.52it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 75.73it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 75.49it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.38it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 75.85it/s]
+Epoch:  64%|██████▍   | 64/100 [05:23<03:31,  5.88s/it]
+Steps:  65%|██████▌   | 65/100.0 [05:25<03:25,  5.88s/it][AEpoch:  65%|██████▌   | 65/100 [05:25<02:49,  4.84s/it]
+Steps:  66%|██████▌   | 66/100.0 [05:27<02:44,  4.84s/it][AEpoch:  66%|██████▌   | 66/100 [05:27<02:19,  4.10s/it]
+Steps:  67%|██████▋   | 67/100.0 [05:30<02:15,  4.10s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 90.29it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.37it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 89.71it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.17it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 102890.57it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.55it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.52it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.52it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.53it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.06it/s]
+
+                                                         [A                                                       
+Steps:  67%|██████▋   | 67/100.0 [05:31<02:15,  4.10s/it][AEpoch:  66%|██████▌   | 66/100 [05:31<02:19,  4.10s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 76.00it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 75.70it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 75.41it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 75.43it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 75.90it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.93it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 75.92it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 75.94it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.75it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 76.06it/s]
+Epoch:  67%|██████▋   | 67/100 [05:32<02:20,  4.24s/it]
+Steps:  68%|██████▊   | 68/100.0 [05:34<02:15,  4.24s/it][AEpoch:  68%|██████▊   | 68/100 [05:34<01:57,  3.69s/it]
+Steps:  69%|██████▉   | 69/100.0 [05:37<01:54,  3.69s/it][AEpoch:  69%|██████▉   | 69/100 [05:37<01:42,  3.30s/it]
+Steps:  70%|███████   | 70/100.0 [05:39<01:38,  3.30s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  47%|████▋     | 8/17 [00:00<00:00, 76.64it/s][A[A
+
+update embedding: 100%|██████████| 17/17 [00:00<00:00, 79.50it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 81.72it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 89.47it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 88.01it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 87381.33it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.51it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.51it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.04it/s]
+
+                                                         [A                                                       
+Steps:  70%|███████   | 70/100.0 [05:40<01:38,  3.30s/it][AEpoch:  69%|██████▉   | 69/100 [05:40<01:42,  3.30s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 74.12it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 74.51it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 74.70it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 74.98it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 74.76it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.46it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 75.96it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 75.43it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.54it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 75.73it/s]
+Epoch:  70%|███████   | 70/100 [05:41<01:50,  3.69s/it]
+Steps:  71%|███████   | 71/100.0 [05:44<01:46,  3.69s/it][AEpoch:  71%|███████   | 71/100 [05:44<01:35,  3.30s/it]
+Steps:  72%|███████▏  | 72/100.0 [05:46<01:32,  3.30s/it][AEpoch:  72%|███████▏  | 72/100 [05:46<01:24,  3.03s/it]
+Steps:  73%|███████▎  | 73/100.0 [05:49<01:21,  3.03s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 83.54it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 86.76it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 88.47it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 89.52it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 112111.90it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.50it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.48it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.50it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.51it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.04it/s]
+
+                                                         [A                                                       
+Steps:  73%|███████▎  | 73/100.0 [05:50<01:21,  3.03s/it][AEpoch:  72%|███████▏  | 72/100 [05:50<01:24,  3.03s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 71.92it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.45it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 73.98it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 74.69it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 74.72it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 75.35it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 74.45it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 74.47it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.60it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 75.60it/s]
+Epoch:  73%|███████▎  | 73/100 [05:51<01:34,  3.50s/it]
+Steps:  74%|███████▍  | 74/100.0 [05:53<01:30,  3.50s/it][AEpoch:  74%|███████▍  | 74/100 [05:53<01:22,  3.17s/it]
+Steps:  75%|███████▌  | 75/100.0 [05:55<01:19,  3.17s/it][AEpoch:  75%|███████▌  | 75/100 [05:56<01:13,  2.94s/it]
+Steps:  76%|███████▌  | 76/100.0 [05:58<01:10,  2.94s/it][A11/13/2020 01:31:10 - INFO - EMSE.utils -   Saving checkpoint to ./output/xLua/epoch-ckp-75
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 84.19it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 87.08it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 88.08it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 89.40it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 105012.03it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.59it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.57it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.56it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.56it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.09it/s]
+
+                                                         [A                                                       
+Steps:  76%|███████▌  | 76/100.0 [06:23<01:10,  2.94s/it][AEpoch:  75%|███████▌  | 75/100 [06:23<01:13,  2.94s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 72.93it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 72.57it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 73.15it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 73.72it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 73.43it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 73.43it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 74.22it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 73.88it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 73.68it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 73.95it/s]
+Epoch:  76%|███████▌  | 76/100 [06:24<04:16, 10.68s/it]
+Steps:  77%|███████▋  | 77/100.0 [06:27<04:05, 10.68s/it][AEpoch:  77%|███████▋  | 77/100 [06:27<03:08,  8.20s/it]
+Steps:  78%|███████▊  | 78/100.0 [06:29<03:00,  8.19s/it][AEpoch:  78%|███████▊  | 78/100 [06:29<02:21,  6.45s/it]
+Steps:  79%|███████▉  | 79/100.0 [06:31<02:15,  6.45s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.33it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 85.49it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.15it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.73it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 89802.48it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.55it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.52it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.52it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.53it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.06it/s]
+
+                                                         [A                                                       
+Steps:  79%|███████▉  | 79/100.0 [06:33<02:15,  6.45s/it][AEpoch:  78%|███████▊  | 78/100 [06:33<02:21,  6.45s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 73.22it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 72.96it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 73.23it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 73.63it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 73.42it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 73.14it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 73.61it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 73.97it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 74.25it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 74.09it/s]
+Epoch:  79%|███████▉  | 79/100 [06:34<02:03,  5.90s/it]
+Steps:  80%|████████  | 80/100.0 [06:36<01:57,  5.90s/it][AEpoch:  80%|████████  | 80/100 [06:36<01:36,  4.85s/it]
+Steps:  81%|████████  | 81/100.0 [06:38<01:32,  4.85s/it][AEpoch:  81%|████████  | 81/100 [06:39<01:18,  4.11s/it]
+Steps:  82%|████████▏ | 82/100.0 [06:41<01:13,  4.11s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 82.47it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 86.11it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.31it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 91.19it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 97809.56it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.52it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.51it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.51it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.04it/s]
+
+                                                         [A                                                       
+Steps:  82%|████████▏ | 82/100.0 [06:42<01:13,  4.11s/it][AEpoch:  81%|████████  | 81/100 [06:42<01:18,  4.11s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 72.47it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.25it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 73.13it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 73.71it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 74.13it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 74.01it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 73.53it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 74.36it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 74.61it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 74.56it/s]
+Epoch:  82%|████████▏ | 82/100 [06:43<01:16,  4.26s/it]
+Steps:  83%|████████▎ | 83/100.0 [06:45<01:12,  4.26s/it][AEpoch:  83%|████████▎ | 83/100 [06:45<01:02,  3.70s/it]
+Steps:  84%|████████▍ | 84/100.0 [06:48<00:59,  3.70s/it][AEpoch:  84%|████████▍ | 84/100 [06:48<00:52,  3.31s/it]
+Steps:  85%|████████▌ | 85/100.0 [06:50<00:49,  3.31s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 81.35it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 85.47it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.24it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.79it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 93696.67it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.57it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.55it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.51it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.05it/s]
+
+                                                         [A                                                       
+Steps:  85%|████████▌ | 85/100.0 [06:51<00:49,  3.31s/it][AEpoch:  84%|████████▍ | 84/100 [06:51<00:52,  3.31s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 71.20it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 72.52it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 72.34it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 73.31it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 73.65it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 74.23it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 74.46it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 74.58it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.35it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 74.93it/s]
+Epoch:  85%|████████▌ | 85/100 [06:53<00:55,  3.70s/it]
+Steps:  86%|████████▌ | 86/100.0 [06:55<00:51,  3.70s/it][AEpoch:  86%|████████▌ | 86/100 [06:55<00:46,  3.31s/it]
+Steps:  87%|████████▋ | 87/100.0 [06:57<00:42,  3.30s/it][AEpoch:  87%|████████▋ | 87/100 [06:57<00:39,  3.03s/it]
+Steps:  88%|████████▊ | 88/100.0 [07:00<00:36,  3.03s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  47%|████▋     | 8/17 [00:00<00:00, 77.17it/s][A[A
+
+update embedding: 100%|██████████| 17/17 [00:00<00:00, 79.80it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 81.81it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 88.71it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 88.61it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 117274.95it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.57it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.55it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.51it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.04it/s]
+
+                                                         [A                                                       
+Steps:  88%|████████▊ | 88/100.0 [07:01<00:36,  3.03s/it][AEpoch:  87%|████████▋ | 87/100 [07:01<00:39,  3.03s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 72.25it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 72.93it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 73.91it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 74.20it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 74.46it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 74.94it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 75.19it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 75.39it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.15it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 75.33it/s]
+Epoch:  88%|████████▊ | 88/100 [07:02<00:42,  3.50s/it]
+Steps:  89%|████████▉ | 89/100.0 [07:04<00:38,  3.51s/it][AEpoch:  89%|████████▉ | 89/100 [07:04<00:34,  3.17s/it]
+Steps:  90%|█████████ | 90/100.0 [07:07<00:31,  3.17s/it][AEpoch:  90%|█████████ | 90/100 [07:07<00:29,  2.94s/it]
+Steps:  91%|█████████ | 91/100.0 [07:09<00:26,  2.94s/it][A11/13/2020 01:32:21 - INFO - EMSE.utils -   Saving checkpoint to ./output/xLua/epoch-ckp-90
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 82.79it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 82.93it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 86.78it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 86.52it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 104092.22it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.58it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.58it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.57it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.54it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.09it/s]
+
+                                                         [A                                                       
+Steps:  91%|█████████ | 91/100.0 [07:35<00:26,  2.94s/it][AEpoch:  90%|█████████ | 90/100 [07:35<00:29,  2.94s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 73.13it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.16it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 72.85it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 74.09it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 74.21it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 74.42it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 73.82it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 73.31it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 72.76it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 73.74it/s]
+Epoch:  91%|█████████ | 91/100 [07:37<01:39, 11.02s/it]
+Steps:  92%|█████████▏| 92/100.0 [07:39<01:28, 11.01s/it][AEpoch:  92%|█████████▏| 92/100 [07:39<01:07,  8.42s/it]
+Steps:  93%|█████████▎| 93/100.0 [07:41<00:58,  8.42s/it][AEpoch:  93%|█████████▎| 93/100 [07:41<00:46,  6.61s/it]
+Steps:  94%|█████████▍| 94/100.0 [07:44<00:39,  6.61s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.38it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 91.12it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.35it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.55it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 105012.03it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.52it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.53it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.52it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.06it/s]
+
+                                                         [A                                                       
+Steps:  94%|█████████▍| 94/100.0 [07:45<00:39,  6.61s/it][AEpoch:  93%|█████████▎| 93/100 [07:45<00:46,  6.61s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  10%|▉         | 7/73 [00:00<00:00, 69.00it/s][A[A
+
+retrival evaluation:  21%|██        | 15/73 [00:00<00:00, 70.64it/s][A[A
+
+retrival evaluation:  32%|███▏      | 23/73 [00:00<00:00, 71.20it/s][A[A
+
+retrival evaluation:  42%|████▏     | 31/73 [00:00<00:00, 71.92it/s][A[A
+
+retrival evaluation:  53%|█████▎    | 39/73 [00:00<00:00, 73.00it/s][A[A
+
+retrival evaluation:  64%|██████▍   | 47/73 [00:00<00:00, 72.85it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 55/73 [00:00<00:00, 72.70it/s][A[A
+
+retrival evaluation:  86%|████████▋ | 63/73 [00:00<00:00, 73.64it/s][A[A
+
+retrival evaluation:  97%|█████████▋| 71/73 [00:00<00:00, 73.78it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 73.79it/s]
+Epoch:  94%|█████████▍| 94/100 [07:46<00:36,  6.00s/it]
+Steps:  95%|█████████▌| 95/100.0 [07:48<00:29,  6.00s/it][AEpoch:  95%|█████████▌| 95/100 [07:48<00:24,  4.91s/it]
+Steps:  96%|█████████▌| 96/100.0 [07:51<00:19,  4.92s/it][AEpoch:  96%|█████████▌| 96/100 [07:51<00:16,  4.16s/it]
+Steps:  97%|█████████▋| 97/100.0 [07:53<00:12,  4.16s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 86.20it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 88.39it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.05it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.73it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 100004.44it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.54it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.51it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.48it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.51it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.03it/s]
+
+                                                         [A                                                       
+Steps:  97%|█████████▋| 97/100.0 [07:54<00:12,  4.16s/it][AEpoch:  96%|█████████▌| 96/100 [07:54<00:16,  4.16s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 73.06it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.72it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 73.51it/s][A[A
+
+retrival evaluation:  44%|████▍     | 32/73 [00:00<00:00, 73.37it/s][A[A
+
+retrival evaluation:  55%|█████▍    | 40/73 [00:00<00:00, 74.26it/s][A[A
+
+retrival evaluation:  66%|██████▌   | 48/73 [00:00<00:00, 74.33it/s][A[A
+
+retrival evaluation:  77%|███████▋  | 56/73 [00:00<00:00, 74.29it/s][A[A
+
+retrival evaluation:  88%|████████▊ | 64/73 [00:00<00:00, 74.41it/s][A[A
+
+retrival evaluation:  99%|█████████▊| 72/73 [00:00<00:00, 75.03it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 74.84it/s]
+Epoch:  97%|█████████▋| 97/100 [07:55<00:12,  4.30s/it]
+Steps:  98%|█████████▊| 98/100.0 [07:58<00:08,  4.30s/it][AEpoch:  98%|█████████▊| 98/100 [07:58<00:07,  3.72s/it]
+Steps:  99%|█████████▉| 99/100.0 [08:00<00:03,  3.73s/it][AEpoch:  99%|█████████▉| 99/100 [08:00<00:03,  3.33s/it]
+Steps: 100%|██████████| 100/100.0 [08:02<00:00,  3.33s/it][A
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  53%|█████▎    | 9/17 [00:00<00:00, 89.45it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 89.77it/s]
+
+
+update embedding:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+update embedding:  59%|█████▉    | 10/17 [00:00<00:00, 91.03it/s][A[Aupdate embedding: 100%|██████████| 17/17 [00:00<00:00, 90.66it/s]
+
+
+random_neg_sampling_dataset:   0%|          | 0/17 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 17/17 [00:00<00:00, 81210.90it/s]
+
+
+Classify Evaluating:   0%|          | 0/9 [00:00<?, ?it/s][A[A
+
+Classify Evaluating:  22%|██▏       | 2/9 [00:00<00:00, 12.50it/s][A[A
+
+Classify Evaluating:  44%|████▍     | 4/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  67%|██████▋   | 6/9 [00:00<00:00, 12.49it/s][A[A
+
+Classify Evaluating:  89%|████████▉ | 8/9 [00:00<00:00, 12.49it/s][A[AClassify Evaluating: 100%|██████████| 9/9 [00:00<00:00, 13.02it/s]
+
+                                                          [A                                                       
+Steps: 100%|██████████| 100/100.0 [08:04<00:00,  3.33s/it][AEpoch:  99%|█████████▉| 99/100 [08:04<00:03,  3.33s/it]
+
+retrival evaluation:   0%|          | 0/73 [00:00<?, ?it/s][A[A
+
+retrival evaluation:  11%|█         | 8/73 [00:00<00:00, 72.21it/s][A[A
+
+retrival evaluation:  22%|██▏       | 16/73 [00:00<00:00, 73.06it/s][A[A
+
+retrival evaluation:  33%|███▎      | 24/73 [00:00<00:00, 72.73it/s][A[A
+
+retrival evaluation:  42%|████▏     | 31/73 [00:00<00:00, 71.89it/s][A[A
+
+retrival evaluation:  53%|█████▎    | 39/73 [00:00<00:00, 71.85it/s][A[A
+
+retrival evaluation:  64%|██████▍   | 47/73 [00:00<00:00, 72.63it/s][A[A
+
+retrival evaluation:  75%|███████▌  | 55/73 [00:00<00:00, 72.38it/s][A[A
+
+retrival evaluation:  86%|████████▋ | 63/73 [00:00<00:00, 72.98it/s][A[A
+
+retrival evaluation:  97%|█████████▋| 71/73 [00:00<00:00, 73.45it/s][A[Aretrival evaluation: 100%|██████████| 73/73 [00:00<00:00, 73.32it/s]
+Epoch: 100%|██████████| 100/100 [08:05<00:00,  3.71s/it]
+                                                          [AEpoch: 100%|██████████| 100/100 [08:05<00:00,  4.85s/it]
+11/13/2020 01:33:17 - INFO - EMSE.utils -   Saving checkpoint to ./output/xLua/final_model
+Steps: 100%|██████████| 100/100.0 [08:42<00:00,  5.22s/it]
+11/13/2020 01:33:53 - INFO - __main__ -   Training finished
+
+evaluate accuracy=0.4411764705882353
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.47058823529411764
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.5294117647058824
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.5294117647058824
+
+
+evaluate accuracy=0.47058823529411764
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.47058823529411764
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.5588235294117647
+
+
+evaluate accuracy=0.47058823529411764
+
+
+evaluate accuracy=0.5588235294117647
+
+
+evaluate accuracy=0.5588235294117647
+
+
+evaluate accuracy=0.5882352941176471
+
+
+evaluate accuracy=0.4411764705882353
+
+
+evaluate accuracy=0.4411764705882353
+
+
+evaluate accuracy=0.4117647058823529
+
+
+evaluate accuracy=0.5294117647058824
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.5882352941176471
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.4411764705882353
+
+
+evaluate accuracy=0.5294117647058824
+
+
+evaluate accuracy=0.5882352941176471
+
+
+evaluate accuracy=0.5294117647058824
+
+
+evaluate accuracy=0.5588235294117647
+
+
+evaluate accuracy=0.5
+
+
+evaluate accuracy=0.5588235294117647
+

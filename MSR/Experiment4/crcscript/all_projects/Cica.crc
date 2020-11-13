@@ -9,4 +9,3 @@ cd $root
 
 # arthas bk-cmdb canal druid Emmagee nacos ncnn pegasus QMUI_Android QMUI_iOS rax san weui xLua
 python3 experiment4.py --data_dir ~/data/EMSE --repo_path Cica --model gvsm --lang_code en --term_similarity_type cl_w --use_translated_data
-git a

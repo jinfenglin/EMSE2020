@@ -9,14 +9,15 @@ import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
+sys.path.append("..")
+sys.path.append("../../")
+
+
 from EMSE.BERTDataReader import load_examples
 from transformers import BertConfig
 from EMSE.metrices import metrics
 from EMSE.models import TBertSiamese
 from EMSE.utils import results_to_df
-
-sys.path.append("..")
-sys.path.append("../../")
 
 MODEL_FNAME = "t_bert.pt"
 OPTIMIZER_FNAME = "optimizer.pt"

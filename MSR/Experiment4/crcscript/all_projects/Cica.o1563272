@@ -1,0 +1,18 @@
+Loading python/3.7.3
+  Loading requirement: tcl/8.6.8 gcc/8.3.0
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:01<00:11,  1.38s/it] 22%|██▏       | 2/9 [00:02<00:08,  1.18s/it] 33%|███▎      | 3/9 [00:03<00:07,  1.19s/it] 44%|████▍     | 4/9 [00:04<00:05,  1.08s/it] 56%|█████▌    | 5/9 [00:05<00:04,  1.24s/it] 67%|██████▋   | 6/9 [00:07<00:04,  1.49s/it] 78%|███████▊  | 7/9 [00:08<00:02,  1.14s/it] 89%|████████▉ | 8/9 [00:08<00:00,  1.16it/s]100%|██████████| 9/9 [00:08<00:00,  1.07it/s]
+9 issues and 10 commits remains after limiting artifacts to links...
+Building GVSM model...
+Building en word embedding ...
+vector #:2519370 vector dimension:300
+Finish building GVSM model
+Processing link set issues-commits
+5.296611721611721
+origin MAP= 0.53
+Origin P,C,F
+[(0.1111, 1.0, 0.2), (0.6, 0.6, 0.6), (0.6667, 0.4, 0.5), (1.0, 0.2, 0.3333), (1.0, 0.2, 0.3333), (1.0, 0.2, 0.3333), (1.0, 0.2, 0.3333), (1.0, 0.2, 0.3333), (1.0, 0.2, 0.3333), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0)]
+git: 'a' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+	add
+	am

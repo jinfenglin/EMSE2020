@@ -42,7 +42,7 @@ def merge_example(project_list, out_dir):
             os.makedirs(out_path)
         pd.concat(cm_dfs, ignore_index=True).to_csv(os.path.join(out_path, "commit.csv"), index=False)
         pd.concat(iss_dfs, ignore_index=True).to_csv(os.path.join(out_path, "issue.csv"), index=False)
-        pd.concat(lk_dfs, ignore_index=True).to_csv(os.path.join(out_path, "link.csv"), index=False)
+        pd.concat(lk_dfs, ignore_index=True).to_csv(os.path.join(out_path, "links.csv"), index=False)
 
 
 if __name__ == "__main__":

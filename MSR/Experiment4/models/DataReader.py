@@ -78,7 +78,7 @@ def readData(issue_path, commit_path, link_path, do_filter=True):
             if len(parts) == 3:
                 id, content, close_time = parts
             elif len(parts) == 4:
-                _, id, content, close_time = parts
+                id, content, close_time, _ = parts 
             else:
                 raise Exception()
             if (len(content.split()) < MIN_DOC_SIZE) and do_filter:
@@ -139,34 +139,17 @@ class Exp4DataReader:
          mirrored to the translated dataset.
         :return:
         """
-        issue_path = os.path.join(self.data_dir, "clean_token_issue.csv")
-        commit_path = os.path.join(self.data_dir, "clean_token_commit.csv")
+
         link_path = os.path.join(self.data_dir, "test", "links.csv")
-        origin_dataset = readData(issue_path, commit_path, link_path, do_filter=False)
         if use_translated_data:
             issue_path = os.path.join(self.data_dir, "translated_token_issue.csv")
             commit_path = os.path.join(self.data_dir, "translated_token_commit.csv")
             trans_dataset = readData(issue_path, commit_path, link_path, do_filter=False)
-            # map the translated gold linkset back to origin datset, any filtering on origin dataset will reflect on trans dataset
-            for link_set_id in trans_dataset.gold_link_sets:
-                origin_link_set: LinkSet = origin_dataset.gold_link_sets[link_set_id]
-                trans_link_set: LinkSet = trans_dataset.gold_link_sets[link_set_id]
-
-                trans_link_set.links = origin_link_set.links
-                remove_elements = []
-                for s_id in trans_link_set.artiPair.source_artif:
-                    if s_id not in origin_link_set.artiPair.source_artif:
-                        remove_elements.append(s_id)
-                for s_id in remove_elements:
-                    del trans_link_set.artiPair.source_artif[s_id]
-                remove_elements = []
-                for t_id in trans_link_set.artiPair.target_artif:
-                    if t_id not in origin_link_set.artiPair.target_artif:
-                        remove_elements.append(t_id)
-                for t_id in remove_elements:
-                    del trans_link_set.artiPair.target_artif[t_id]
             return trans_dataset
         else:
+            issue_path = os.path.join(self.data_dir, "clean_token_issue.csv")
+            commit_path = os.path.join(self.data_dir, "clean_token_commit.csv")
+            origin_dataset = readData(issue_path, commit_path, link_path, do_filter=False)
             return origin_dataset
 
 if __name__ == "__main__":
