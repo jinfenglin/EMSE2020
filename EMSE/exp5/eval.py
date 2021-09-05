@@ -96,7 +96,7 @@ if __name__ == "__main__":
         os.makedirs(args.output_dir)
 
     model = TBertSiamese(BertConfig(), args.lm)
-    if args.model_path and os.path.exists(args.model_path):
+    if args.model_path:
         model_path = os.path.join(args.model_path, MODEL_FNAME)
         model.load_state_dict(torch.load(model_path))
 

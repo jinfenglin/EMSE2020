@@ -1,335 +1,0 @@
-Loading python/3.7.3
-  Loading requirement: tcl/8.6.8 gcc/8.3.0
-ERROR: Unable to locate a modulefile for 'pytorch/1.7.0'
-11/10/2020 02:40:56 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 1, distributed training: False, 16-bits training: False
-11/10/2020 02:40:57 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
-11/10/2020 02:40:57 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
-  "activation": "gelu",
-  "architectures": [
-    "DistilBertForMaskedLM"
-  ],
-  "attention_dropout": 0.1,
-  "dim": 768,
-  "dropout": 0.1,
-  "hidden_dim": 3072,
-  "initializer_range": 0.02,
-  "max_position_embeddings": 512,
-  "model_type": "distilbert",
-  "n_heads": 12,
-  "n_layers": 6,
-  "output_past": true,
-  "pad_token_id": 0,
-  "qa_dropout": 0.1,
-  "seq_classif_dropout": 0.2,
-  "sinusoidal_pos_embds": false,
-  "tie_weights_": true,
-  "vocab_size": 119547
-}
-
-11/10/2020 02:40:57 - INFO - transformers.tokenization_utils_base -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-cased-vocab.txt from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/96435fa287fbf7e469185f1062386e05a075cadbf6838b74da22bf64b080bc32.99bcd55fc66f4f3360bc49ba472b940b8dcf223ea6a345deb969d607ca900729
-11/10/2020 02:40:57 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
-11/10/2020 02:40:57 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
-  "activation": "gelu",
-  "architectures": [
-    "DistilBertForMaskedLM"
-  ],
-  "attention_dropout": 0.1,
-  "dim": 768,
-  "dropout": 0.1,
-  "hidden_dim": 3072,
-  "initializer_range": 0.02,
-  "max_position_embeddings": 512,
-  "model_type": "distilbert",
-  "n_heads": 12,
-  "n_layers": 6,
-  "output_past": true,
-  "pad_token_id": 0,
-  "qa_dropout": 0.1,
-  "seq_classif_dropout": 0.2,
-  "sinusoidal_pos_embds": false,
-  "tie_weights_": true,
-  "vocab_size": 119547
-}
-
-11/10/2020 02:40:57 - INFO - transformers.modeling_utils -   loading weights file https://cdn.huggingface.co/distilbert-base-multilingual-cased-pytorch_model.bin from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/72a6c787412704a6fa6f5d9e5ef7d33c5b80c787e2bbc7d9ad82d7f88fb8f802.89fad86febf14521569023d312560283a922c0884a52f412eef4e96f91513ab2
-11/10/2020 02:41:01 - INFO - transformers.modeling_utils -   All model checkpoint weights were used when initializing DistilBertModel.
-
-11/10/2020 02:41:01 - INFO - transformers.modeling_utils -   All the weights of DistilBertModel were initialized from the model checkpoint at distilbert-base-multilingual-cased.
-If your task is similar to the task the model of the ckeckpoint was trained on, you can already use DistilBertModel for predictions without further training.
-11/10/2020 02:41:02 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
-11/10/2020 02:41:02 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
-  "activation": "gelu",
-  "architectures": [
-    "DistilBertForMaskedLM"
-  ],
-  "attention_dropout": 0.1,
-  "dim": 768,
-  "dropout": 0.1,
-  "hidden_dim": 3072,
-  "initializer_range": 0.02,
-  "max_position_embeddings": 512,
-  "model_type": "distilbert",
-  "n_heads": 12,
-  "n_layers": 6,
-  "output_past": true,
-  "pad_token_id": 0,
-  "qa_dropout": 0.1,
-  "seq_classif_dropout": 0.2,
-  "sinusoidal_pos_embds": false,
-  "tie_weights_": true,
-  "vocab_size": 119547
-}
-
-11/10/2020 02:41:02 - INFO - transformers.tokenization_utils_base -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-cased-vocab.txt from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/96435fa287fbf7e469185f1062386e05a075cadbf6838b74da22bf64b080bc32.99bcd55fc66f4f3360bc49ba472b940b8dcf223ea6a345deb969d607ca900729
-11/10/2020 02:41:02 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilbert-base-multilingual-cased-config.json from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/aee7490b1a48646df683dee12f25d9c63ebbf8dce1b7e1a656ce28830d9a7e86.bc76a47cb1c1c2984e48f23afbd3473a944ac1a2be9a8c8200092f5bf62153c9
-11/10/2020 02:41:02 - INFO - transformers.configuration_utils -   Model config DistilBertConfig {
-  "activation": "gelu",
-  "architectures": [
-    "DistilBertForMaskedLM"
-  ],
-  "attention_dropout": 0.1,
-  "dim": 768,
-  "dropout": 0.1,
-  "hidden_dim": 3072,
-  "initializer_range": 0.02,
-  "max_position_embeddings": 512,
-  "model_type": "distilbert",
-  "n_heads": 12,
-  "n_layers": 6,
-  "output_past": true,
-  "pad_token_id": 0,
-  "qa_dropout": 0.1,
-  "seq_classif_dropout": 0.2,
-  "sinusoidal_pos_embds": false,
-  "tie_weights_": true,
-  "vocab_size": 119547
-}
-
-11/10/2020 02:41:02 - INFO - transformers.modeling_utils -   loading weights file https://cdn.huggingface.co/distilbert-base-multilingual-cased-pytorch_model.bin from cache at /afs/crc.nd.edu/user/j/jlin6/.cache/torch/transformers/72a6c787412704a6fa6f5d9e5ef7d33c5b80c787e2bbc7d9ad82d7f88fb8f802.89fad86febf14521569023d312560283a922c0884a52f412eef4e96f91513ab2
-11/10/2020 02:41:07 - INFO - transformers.modeling_utils -   All model checkpoint weights were used when initializing DistilBertModel.
-
-11/10/2020 02:41:07 - INFO - transformers.modeling_utils -   All the weights of DistilBertModel were initialized from the model checkpoint at distilbert-base-multilingual-cased.
-If your task is similar to the task the model of the ckeckpoint was trained on, you can already use DistilBertModel for predictions without further training.
-11/10/2020 02:41:11 - INFO - __main__ -   Training/evaluation parameters Namespace(adam_epsilon=1e-08, data_dir='/afs/crc.nd.edu/user/j/jlin6/data/EMSE/konlpy', device=device(type='cuda'), exp_name='konlp', fp16=False, fp16_opt_level='O1', gradient_accumulation_steps=2, hard_ratio=0.5, learning_rate=1e-05, local_rank=-1, logging_steps=10, max_grad_norm=1.0, max_steps=-1, model_path='/afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp3/models/model1', n_gpu=1, neg_sampling='online', no_cuda=False, num_train_epochs=20.0, output_dir='./output', overwrite=True, per_gpu_eval_batch_size=4, per_gpu_train_batch_size=4, save_epoch=5, save_steps=-1, seed=42, tbert_type='siamese', train_num=None, valid_epoch=5, valid_num=200, valid_step=-1, warmup_steps=0, weight_decay=0.0)
-11/10/2020 02:41:11 - INFO - EMSE.BERTDataReader -   Creating examples from dataset file at /afs/crc.nd.edu/user/j/jlin6/data/EMSE/konlpy/train
-update feature:   0%|          | 0/10 [00:00<?, ?it/s]update feature: 100%|██████████| 10/10 [00:00<00:00, 909.37it/s]
-update feature:   0%|          | 0/10 [00:00<?, ?it/s]update feature: 100%|██████████| 10/10 [00:00<00:00, 490.22it/s]
-11/10/2020 02:41:11 - INFO - EMSE.BERTDataReader -   Creating examples from dataset file at /afs/crc.nd.edu/user/j/jlin6/data/EMSE/konlpy/valid
-update feature:   0%|          | 0/11 [00:00<?, ?it/s]update feature: 100%|██████████| 11/11 [00:00<00:00, 258.45it/s]
-update feature:   0%|          | 0/11 [00:00<?, ?it/s]update feature: 100%|██████████| 11/11 [00:00<00:00, 288.27it/s]
-11/10/2020 02:41:11 - INFO - __main__ -   ***** Running training *****
-11/10/2020 02:41:11 - INFO - __main__ -     Num examples = 20
-11/10/2020 02:41:11 - INFO - __main__ -     Num Epochs = 20
-11/10/2020 02:41:11 - INFO - __main__ -     Instantaneous batch size per GPU = 4
-11/10/2020 02:41:11 - INFO - __main__ -     Total train batch size (w. parallel, distributed & accumulation) = 8
-11/10/2020 02:41:11 - INFO - __main__ -     Gradient Accumulation steps = 2
-11/10/2020 02:41:11 - INFO - __main__ -     Total optimization steps = 40
-11/10/2020 02:41:11 - INFO - EMSE.utils -   Loading checkpoint from /afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp3/models/model1, remove optimizer and scheduler if you do not want to load them
-11/10/2020 02:41:11 - INFO - EMSE.utils -   Loading optimizer...
-11/10/2020 02:41:13 - INFO - EMSE.utils -   Loading scheduler...
-/afs/crc.nd.edu/user/j/jlin6/.local/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:234: UserWarning: Please also save or load the state of the optimizer when saving or loading the scheduler.
-  warnings.warn(SAVE_STATE_WARNING, UserWarning)
-11/10/2020 02:41:13 - INFO - __main__ -     Continuing training from checkpoint, will skip to saved global_step
-11/10/2020 02:41:13 - INFO - __main__ -     Continuing training from epoch 0, global step 0
-Epoch:   0%|          | 0/20 [00:00<?, ?it/s]
-Steps:   0%|          | 0/40.0 [00:00<?, ?it/s][A
-Steps:   2%|▎         | 1/40.0 [00:00<00:25,  1.53it/s][A
-Steps:   5%|▌         | 2/40.0 [00:01<00:24,  1.55it/s][A11/10/2020 02:41:14 - INFO - EMSE.utils -   Saving checkpoint to ./output/konlp_11-10_02-41-11/epoch-ckp-0
-/afs/crc.nd.edu/user/j/jlin6/.local/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:216: UserWarning: Please also save or load the state of the optimizer when saving or loading the scheduler.
-  warnings.warn(SAVE_STATE_WARNING, UserWarning)
-
-
-update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
-
-update embedding:  55%|█████▍    | 6/11 [00:00<00:00, 59.62it/s][A[A
-
-update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 11.09it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 16.33it/s]
-
-
-update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
-
-update embedding:  64%|██████▎   | 7/11 [00:01<00:00, 62.36it/s][A[A
-
-update embedding:  82%|████████▏ | 9/11 [00:01<00:00,  4.97it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:01<00:00,  7.81it/s]
-
-
-random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 25115.59it/s]
-
-
-Classify Evaluating:   0%|          | 0/6 [00:00<?, ?it/s][A[A
-
-Classify Evaluating:  33%|███▎      | 2/6 [00:00<00:00, 12.36it/s][A[A
-
-Classify Evaluating:  67%|██████▋   | 4/6 [00:00<00:00, 12.47it/s][A[A
-
-Classify Evaluating: 100%|██████████| 6/6 [00:00<00:00, 13.28it/s][A[AClassify Evaluating: 100%|██████████| 6/6 [00:00<00:00, 13.43it/s]
-                                             
-                                                       [AEpoch:   0%|          | 0/20 [00:34<?, ?it/s]
-Steps:   5%|▌         | 2/40.0 [00:34<00:24,  1.55it/s][A
-
-retrival evaluation:   0%|          | 0/31 [00:00<?, ?it/s][A[A
-
-retrival evaluation:  23%|██▎       | 7/31 [00:00<00:00, 69.96it/s][A[A
-
-retrival evaluation:  48%|████▊     | 15/31 [00:00<00:00, 70.31it/s][A[A
-
-retrival evaluation:  74%|███████▍  | 23/31 [00:00<00:00, 70.41it/s][A[A
-
-retrival evaluation: 100%|██████████| 31/31 [00:00<00:00, 71.28it/s][A[Aretrival evaluation: 100%|██████████| 31/31 [00:00<00:00, 71.25it/s]
-Epoch:   5%|▌         | 1/20 [00:40<12:44, 40.25s/it]
-Steps:   8%|▊         | 3/40.0 [00:40<07:36, 12.33s/it][A
-Steps:  10%|█         | 4/40.0 [00:41<05:16,  8.80s/it][AEpoch:  10%|█         | 2/20 [00:41<08:35, 28.62s/it]
-Steps:  12%|█▎        | 5/40.0 [00:42<03:45,  6.43s/it][A
-Steps:  15%|█▌        | 6/40.0 [00:42<02:39,  4.69s/it][AEpoch:  15%|█▌        | 3/20 [00:43<05:48, 20.48s/it]
-Steps:  18%|█▊        | 7/40.0 [00:43<01:57,  3.55s/it][A
-Steps:  20%|██        | 8/40.0 [00:44<01:25,  2.67s/it][AEpoch:  20%|██        | 4/20 [00:44<03:56, 14.79s/it]
-Steps:  22%|██▎       | 9/40.0 [00:45<01:06,  2.14s/it][A
-Steps:  25%|██▌       | 10/40.0 [00:45<00:50,  1.67s/it][AEpoch:  25%|██▌       | 5/20 [00:46<02:42, 10.80s/it]
-Steps:  28%|██▊       | 11/40.0 [00:46<00:41,  1.44s/it][A
-Steps:  30%|███       | 12/40.0 [00:47<00:33,  1.19s/it][A11/10/2020 02:42:00 - INFO - EMSE.utils -   Saving checkpoint to ./output/konlp_11-10_02-41-11/epoch-ckp-5
-
-
-update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
-
-update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 79.55it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 80.05it/s]
-
-
-update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
-
-update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 82.34it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 82.39it/s]
-
-
-random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 44277.68it/s]
-
-
-Classify Evaluating:   0%|          | 0/6 [00:00<?, ?it/s][A[A
-
-Classify Evaluating:  33%|███▎      | 2/6 [00:00<00:00, 12.39it/s][A[A
-
-Classify Evaluating:  67%|██████▋   | 4/6 [00:00<00:00, 12.51it/s][A[A
-
-Classify Evaluating: 100%|██████████| 6/6 [00:00<00:00, 13.33it/s][A[AClassify Evaluating: 100%|██████████| 6/6 [00:00<00:00, 13.49it/s]
-                                                     
-                                                        [AEpoch:  25%|██▌       | 5/20 [01:43<02:42, 10.80s/it]
-Steps:  30%|███       | 12/40.0 [01:43<00:33,  1.19s/it][A
-
-retrival evaluation:   0%|          | 0/31 [00:00<?, ?it/s][A[A
-
-retrival evaluation:  26%|██▌       | 8/31 [00:00<00:00, 74.43it/s][A[A
-
-retrival evaluation:  52%|█████▏    | 16/31 [00:00<00:00, 74.44it/s][A[A
-
-retrival evaluation:  77%|███████▋  | 24/31 [00:00<00:00, 74.58it/s][A[Aretrival evaluation: 100%|██████████| 31/31 [00:00<00:00, 75.33it/s]
-Epoch:  30%|███       | 6/20 [01:44<05:50, 25.01s/it]
-Steps:  32%|███▎      | 13/40.0 [01:44<08:08, 18.09s/it][A
-Steps:  35%|███▌      | 14/40.0 [01:45<05:34, 12.85s/it][AEpoch:  35%|███▌      | 7/20 [01:45<03:53, 17.95s/it]
-Steps:  38%|███▊      | 15/40.0 [01:46<03:51,  9.26s/it][A
-Steps:  40%|████      | 16/40.0 [01:47<02:39,  6.66s/it][AEpoch:  40%|████      | 8/20 [01:47<02:36, 13.01s/it]
-Steps:  42%|████▎     | 17/40.0 [01:47<01:53,  4.93s/it][A
-Steps:  45%|████▌     | 18/40.0 [01:48<01:19,  3.63s/it][AEpoch:  45%|████▌     | 9/20 [01:48<01:45,  9.56s/it]
-Steps:  48%|████▊     | 19/40.0 [01:49<00:58,  2.81s/it][A
-Steps:  50%|█████     | 20/40.0 [01:50<00:43,  2.15s/it][AEpoch:  50%|█████     | 10/20 [01:50<01:11,  7.14s/it]
-Steps:  52%|█████▎    | 21/40.0 [01:50<00:33,  1.77s/it][A
-Steps:  55%|█████▌    | 22/40.0 [01:51<00:25,  1.42s/it][A11/10/2020 02:43:05 - INFO - EMSE.utils -   Saving checkpoint to ./output/konlp_11-10_02-41-11/epoch-ckp-10
-
-
-update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
-
-update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 76.18it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 75.03it/s]
-
-
-update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
-
-update embedding:  73%|███████▎  | 8/11 [00:00<00:00, 76.00it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 77.43it/s]
-
-
-random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 62263.62it/s]
-
-
-Classify Evaluating:   0%|          | 0/6 [00:00<?, ?it/s][A[A
-
-Classify Evaluating:  33%|███▎      | 2/6 [00:00<00:00, 12.65it/s][A[A
-
-Classify Evaluating:  67%|██████▋   | 4/6 [00:00<00:00, 12.69it/s][A[A
-
-Classify Evaluating: 100%|██████████| 6/6 [00:00<00:00, 13.47it/s][A[AClassify Evaluating: 100%|██████████| 6/6 [00:00<00:00, 13.57it/s]
-                                                      
-                                                        [AEpoch:  50%|█████     | 10/20 [02:34<01:11,  7.14s/it]
-Steps:  55%|█████▌    | 22/40.0 [02:34<00:25,  1.42s/it][A
-
-retrival evaluation:   0%|          | 0/31 [00:00<?, ?it/s][A[A
-
-retrival evaluation:  26%|██▌       | 8/31 [00:00<00:00, 73.11it/s][A[A
-
-retrival evaluation:  52%|█████▏    | 16/31 [00:00<00:00, 73.71it/s][A[A
-
-retrival evaluation:  77%|███████▋  | 24/31 [00:00<00:00, 74.36it/s][A[Aretrival evaluation: 100%|██████████| 31/31 [00:00<00:00, 75.62it/s]
-Epoch:  55%|█████▌    | 11/20 [02:35<02:46, 18.45s/it]
-Steps:  57%|█████▊    | 23/40.0 [02:35<04:02, 14.26s/it][A
-Steps:  60%|██████    | 24/40.0 [02:36<02:42, 10.16s/it][AEpoch:  60%|██████    | 12/20 [02:36<01:46, 13.36s/it]
-Steps:  62%|██████▎   | 25/40.0 [02:37<01:50,  7.38s/it][A
-Steps:  65%|██████▌   | 26/40.0 [02:37<01:14,  5.35s/it][AEpoch:  65%|██████▌   | 13/20 [02:38<01:08,  9.80s/it]
-Steps:  68%|██████▊   | 27/40.0 [02:38<00:52,  4.01s/it][A
-Steps:  70%|███████   | 28/40.0 [02:39<00:35,  2.99s/it][AEpoch:  70%|███████   | 14/20 [02:39<00:43,  7.31s/it]
-Steps:  72%|███████▎  | 29/40.0 [02:40<00:26,  2.37s/it][A
-Steps:  75%|███████▌  | 30/40.0 [02:40<00:18,  1.85s/it][AEpoch:  75%|███████▌  | 15/20 [02:41<00:27,  5.58s/it]
-Steps:  78%|███████▊  | 31/40.0 [02:41<00:14,  1.56s/it][A
-Steps:  80%|████████  | 32/40.0 [02:42<00:10,  1.28s/it][A11/10/2020 02:43:55 - INFO - EMSE.utils -   Saving checkpoint to ./output/konlp_11-10_02-41-11/epoch-ckp-15
-
-
-update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
-
-update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 80.29it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 80.35it/s]
-
-
-update embedding:   0%|          | 0/11 [00:00<?, ?it/s][A[A
-
-update embedding:  82%|████████▏ | 9/11 [00:00<00:00, 82.23it/s][A[Aupdate embedding: 100%|██████████| 11/11 [00:00<00:00, 82.54it/s]
-
-
-random_neg_sampling_dataset:   0%|          | 0/11 [00:00<?, ?it/s][A[Arandom_neg_sampling_dataset: 100%|██████████| 11/11 [00:00<00:00, 63375.47it/s]
-
-
-Classify Evaluating:   0%|          | 0/6 [00:00<?, ?it/s][A[A
-
-Classify Evaluating:  33%|███▎      | 2/6 [00:00<00:00, 12.28it/s][A[A
-
-Classify Evaluating:  67%|██████▋   | 4/6 [00:00<00:00, 12.40it/s][A[A
-
-Classify Evaluating: 100%|██████████| 6/6 [00:00<00:00, 13.23it/s][A[AClassify Evaluating: 100%|██████████| 6/6 [00:00<00:00, 13.38it/s]
-                                                      
-                                                        [AEpoch:  75%|███████▌  | 15/20 [03:12<00:27,  5.58s/it]
-Steps:  80%|████████  | 32/40.0 [03:12<00:10,  1.28s/it][A
-
-retrival evaluation:   0%|          | 0/31 [00:00<?, ?it/s][A[A
-
-retrival evaluation:  26%|██▌       | 8/31 [00:00<00:00, 74.74it/s][A[A
-
-retrival evaluation:  52%|█████▏    | 16/31 [00:00<00:00, 75.29it/s][A[A
-
-retrival evaluation:  77%|███████▋  | 24/31 [00:00<00:00, 75.66it/s][A[Aretrival evaluation: 100%|██████████| 31/31 [00:00<00:00, 76.80it/s]
-Epoch:  80%|████████  | 16/20 [03:13<00:54, 13.58s/it]
-Steps:  82%|████████▎ | 33/40.0 [03:14<01:12, 10.38s/it][A
-Steps:  85%|████████▌ | 34/40.0 [03:14<00:44,  7.45s/it][AEpoch:  85%|████████▌ | 17/20 [03:14<00:29,  9.96s/it]
-Steps:  88%|████████▊ | 35/40.0 [03:15<00:27,  5.48s/it][A
-Steps:  90%|█████████ | 36/40.0 [03:16<00:16,  4.02s/it][AEpoch:  90%|█████████ | 18/20 [03:16<00:14,  7.42s/it]
-Steps:  92%|█████████▎| 37/40.0 [03:17<00:09,  3.08s/it][A
-Steps:  95%|█████████▌| 38/40.0 [03:17<00:04,  2.34s/it][AEpoch:  95%|█████████▌| 19/20 [03:17<00:05,  5.64s/it]
-Steps:  98%|█████████▊| 39/40.0 [03:18<00:01,  1.90s/it][A
-Steps: 100%|██████████| 40/40.0 [03:19<00:00,  1.52s/it][AEpoch: 100%|██████████| 20/20 [03:19<00:00,  4.40s/it]
-                                                        [AEpoch: 100%|██████████| 20/20 [03:19<00:00,  9.97s/it]
-11/10/2020 02:44:32 - INFO - EMSE.utils -   Saving checkpoint to ./output/konlp_11-10_02-41-11/final_model
-Steps: 100%|██████████| 40/40.0 [03:40<00:00,  5.52s/it]
-11/10/2020 02:44:54 - INFO - __main__ -   Training finished
-
-evaluate accuracy=0.5454545454545454
-
-
-evaluate accuracy=0.5454545454545454
-
-
-evaluate accuracy=0.5454545454545454
-
-
-evaluate accuracy=0.5454545454545454
-

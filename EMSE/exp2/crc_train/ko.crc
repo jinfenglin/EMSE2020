@@ -1,7 +1,7 @@
 #!/bin/csh
 #$ -l gpu_card=1
 #$ -q gpu
-#$ -N QMA     #train and evaluate on bk-cmdb dataset
+#$ -N konlpy     #train and evaluate on bk-cmdb dataset
 
 module load python/3.7.3
 module load pytorch/1.7.0
@@ -10,7 +10,7 @@ set root = "/afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp2"
 cd $root
 
 python train.py \
-    --data_dir ~/data/EMSE/QMUI_Android \
+    --data_dir ~/data/EMSE/konlpy \
     --output_dir ./output \
     --per_gpu_train_batch_size 4 \
     --per_gpu_eval_batch_size 4 \
@@ -22,5 +22,5 @@ python train.py \
     --valid_num 200 \
     --valid_epoch 50 \
     --neg_sampling online \
-    --exp_name QMUI_Android \
+    --exp_name konlpy \
     --overwrite

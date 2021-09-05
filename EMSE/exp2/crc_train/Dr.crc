@@ -22,5 +22,5 @@ python train.py \
     --valid_num 200 \
     --valid_epoch 100 \
     --neg_sampling online \
-    --exp_name dr \
+    --exp_name druid \
     --overwrite

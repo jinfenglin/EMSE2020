@@ -12,11 +12,11 @@ cd $root
 # arthas bk-cmdb canal druid Emmagee nacos ncnn pegasus QMUI_Android QMUI_iOS rax san weui xLua
 
 # foreach x (arthas bk-cmdb canal druid Emmagee nacos ncnn pegasus QMUI_Android QMUI_iOS rax san weui xLua)
+# foreach x (arthas Emmagee nacos ncnn pegasus QMUI_Android QMUI_iOS weui xLua)
 foreach x (san)
-    set model_path = ./ouput/x/epoch-ckp-90
     python eval.py \
     --data_dir "/afs/crc.nd.edu/user/j/jlin6/data/EMSE/$x" \
-    --model_path $model_path \
+    --model_path "/afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp2/output/$x/epoch-ckp-100" \
     --per_gpu_eval_batch_size 4 \
     --exp_name "exp2_$x" \
     --lm distilbert-base-multilingual-cased \

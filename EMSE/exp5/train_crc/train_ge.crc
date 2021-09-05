@@ -11,17 +11,17 @@ cd $root
 
 python train.py \
     --data_dir ~/data/EMSE/awesome-berlin \
-    --model_path /afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp3/models/model1 \
+    # --model_path /afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp3/models/model1 \
     --output_dir ./output \
     --per_gpu_train_batch_size 4 \
     --per_gpu_eval_batch_size 4 \
     --logging_steps 10 \
     --learning_rate 1e-5 \
-    --save_epoch 5 \
+    --save_epoch 20 \
     --gradient_accumulation_steps 2 \
-    --num_train_epochs 20 \
+    --num_train_epochs 200 \
     --valid_num 200 \
-    --valid_epoch 5 \
+    --valid_epoch 20 \
     --neg_sampling online \
-    --exp_name ge \
+    --exp_name awesome-berlin \
     --overwrite

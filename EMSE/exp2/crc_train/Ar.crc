@@ -16,11 +16,11 @@ python train.py \
 --per_gpu_eval_batch_size 4 \
 --logging_steps 10 \
 --learning_rate 1e-5 \
---save_epoch 15 \
+--save_epoch 50 \
 --gradient_accumulation_steps 8 \
---num_train_epochs 50 \
+--num_train_epochs 200 \
 --valid_num 200 \
---valid_epoch 3 \
+--valid_epoch 50 \
 --neg_sampling online \
 --exp_name arthas \
 --overwrite

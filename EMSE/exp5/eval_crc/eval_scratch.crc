@@ -1,17 +1,20 @@
 #!/bin/csh
 #$ -l gpu_card=1
 #$ -q gpu     # Specify queue (use ‘debug’ for development)
-#$ -N exp5_ko_few
+#$ -N exp5_scratch    #evalute the model without training
+
 module load python/3.7.3
 module load pytorch/1.1.0
 
 set root = "/afs/crc.nd.edu/user/j/jlin6/projects/EMSE2020/EMSE/exp5"
 cd $root
 
-python eval.py \
-    --data_dir /afs/crc.nd.edu/user/j/jlin6/data/EMSE/konlpy \
-    --model_path ./output/konlp_11-14_13-25-25/epoch-ckp-180 \
+foreach x (Cica konlpy awesome-berlin)
+    python eval.py \
+    --data_dir "/afs/crc.nd.edu/user/j/jlin6/data/EMSE/$x" \
+    --model_path "./output/" \
     --per_gpu_eval_batch_size 4 \
-    --exp_name ko_few \
+    --exp_name "exp5_$x" \
     --lm distilbert-base-multilingual-cased \
     --overwrite
+end

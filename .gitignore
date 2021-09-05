@@ -9,3 +9,4 @@ evaluation
 .idea/*
 results
 models
+*.o*

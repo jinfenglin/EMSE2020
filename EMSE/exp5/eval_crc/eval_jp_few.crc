@@ -10,7 +10,7 @@ cd $root
 
 python eval.py \
     --data_dir /afs/crc.nd.edu/user/j/jlin6/data/EMSE/Cica \
-    --model_path ./models/jp_few \
+    --model_path ./output/jp_11-14_13-25-22/epoch-ckp-180 \
     --per_gpu_eval_batch_size 4 \
     --exp_name jp_few \
     --lm distilbert-base-multilingual-cased \
